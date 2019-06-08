@@ -1,12 +1,12 @@
 # Requisitos
 ## Requisitos Funcionais
-[#RF 01](#rf-01)
-[#RF 02](#rf-02)
-[#RF 03](#rf-03)
-[#RF 04](#rf-04)
-[#RF 05](#rf-05)
-[#RF 06](#rf-06)
-[#RF 07](#rf-07)
+[RF 01](#rf-01)
+[RF 02](#rf-02)
+[RF 03](#rf-03)
+[RF 04](#rf-04)
+[RF 05](#rf-05)
+[RF 06](#rf-06)
+[RF 07](#rf-07)
 
 ### RF 01
 Cadastro de alunos novos, façam eles o curso ou não. 
