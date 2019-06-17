@@ -30,21 +30,21 @@
     Taísa Evangelista
    
 ## Funções de cada integrante:
-   - Elizabeth e Mileny:
-   Cadastro;
-   Login;
-   Geração de ids do aluno;
-   Atualização de exercícios;
-   Páginas de exercícios;
-   Página do aluno;
+   ### Elizabeth e Mileny:
+   - Cadastro;
+   - Login;
+   - Geração de ids do aluno;
+   - Atualização de exercícios;
+   - Páginas de exercícios;
+   - Página do aluno;
    
-   - Lucas e Taísa:
-   Banco de Dados;
-   Marcação de aulas;
-   Calendário de aulas;
-   Inserção de palavras novas;
-   Biblioteca de Palavras;
-   Página do professor;
-   Notificação;
+   ### Lucas e Taísa:
+   - Banco de Dados;
+   - Marcação de aulas;
+   - Calendário de aulas;
+   - Inserção de palavras novas;
+   - Biblioteca de Palavras;
+   - Página do professor;
+   - Notificação;
    
    
