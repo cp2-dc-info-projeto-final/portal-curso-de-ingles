@@ -1,10 +1,10 @@
-###*Ata da Entrevista*
-##*Data* - 20/04/2019 
-##*Horário de Início* - 17:10 
-##*Horário de Término* - 18:23
-##*Local Shopping Grande Rio*  - Espaço Colabore 
-##*O Projeto do Cliente* - Criar um aplicativo de smartphone para auxiliar nas aulas de inglês do próprio cliente. Uma plataforma inteira na língua inglesa, que terá as funções de : Colocar datas das aulas, provas, trabalhos etc (Calendário Escolar); Disponibilizar exercícios/questionários quinzenais com 5 níveis diferentes para os estudantes; O Aluno ter a sua própria biblioteca de palavras aprendidas(Vocabulário do Aluno); Cada aluno vai entrar no aplicativo com a sua senha e login;
-##*Falas*
+# *Ata da Entrevista*
+## *Data* - 20/04/2019 
+## *Horário de Início* - 17:10 
+## *Horário de Término* - 18:23
+## *Local Shopping Grande Rio*  - Espaço Colabore 
+## *O Projeto do Cliente* - Criar um aplicativo de smartphone para auxiliar nas aulas de inglês do próprio cliente. Uma plataforma inteira na língua inglesa, que terá as funções de : Colocar datas das aulas, provas, trabalhos etc (Calendário Escolar); Disponibilizar exercícios/questionários quinzenais com 5 níveis diferentes para os estudantes; O Aluno ter a sua própria biblioteca de palavras aprendidas(Vocabulário do Aluno); Cada aluno vai entrar no aplicativo com a sua senha e login;
+## *Falas*
 *(Infelizmente, Algumas partes do áudio fizeram muitos barulhos e interrompeu o entendimento da fala.)*
 Cliente : é possível fazer a conversão do aplicativo em Android para iOS?
 -Sim.
