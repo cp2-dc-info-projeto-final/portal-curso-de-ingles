@@ -95,3 +95,10 @@ PRIMARY KEY(idaula),
 FOREIGN KEY(aluno) REFERENCES idaluno(idaluno),
 FOREIGN KEY(professor) REFERENCES professor(email)
 )
+
+ALTER TABLE aluno
+ADD endereco VARCHAR(100)
+
+ALTER TABLE aluno
+ADD idaluno INT 
+FOREIGN KEY(idaluno) REFERENCES idaluno(idaluno)
