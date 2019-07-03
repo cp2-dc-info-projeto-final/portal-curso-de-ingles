@@ -23,12 +23,11 @@
 **Fluxo principal:**
 1. O usário clica em cadastro na página inicial.
 2. O sistema o redireciona para a página de cadastro
-3. O usuário preenche as lacunas nome, endereço, data de nascimento, telefone, cpf, email e senha.
-4. O sistema mostra uma mensagem perguntando se o usuário é aluno do curso.
-5. O usuário marca que sim.
-6. Sistema exibe uma lacuna solicitando o número de matrícula.
-7. O usuário preenche a lacuna.
-8. O sistema redireciona o usuário para a página incial.
+3. O usuário seleciona o tipo de usuário que ele é.
+4. O usuário preenche as lacunas nome, endereço, data de nascimento, telefone,  email e senha.
+5. Sistema exibe uma lacuna solicitando o número de matrícula.
+6. O usuário preenche a lacuna.
+7. O sistema redireciona o usuário para a página incial.
 
 **Fluxo alternativo:**
 1. O usuário preenche alguma das lacunas(nome, endereço, data de nascimento, telefone, cpf, email e senha) com uma informação errada.
@@ -37,8 +36,9 @@
 4. Continua o fluxo principal.
 
 **Fluxo alternativo:**
-1. O usuário marca não quando o sistema pergunta se ele é aluno do curso.
-2. O sistema o redireciona para a página incial.
+1. O usuário marca visitante na página de cadastro.
+2. O usuário preenche as lacunas nome, endereço, data de nascimento, telefone,  email e senha.
+3. O sistema redireciona o usuário para a página incial.
 
 **Fluxo alternativo:**
 1. O usuário insere um número de matrículas que não consta no banco de dados.
