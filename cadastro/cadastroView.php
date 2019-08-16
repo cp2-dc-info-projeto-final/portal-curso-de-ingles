@@ -18,11 +18,13 @@
     <p>
         <label for="senha">Senha</label>
         <input type="password" name="senha" id="senha">
+        <label for="8digitos">DIGITA UMA SENHA DE 8 DIGITOS PELO AMOR DE SANTA NAY</label>
     </p>
     <p>
         <label for="senha">Confirmação</label>
         <input type="password" name="confirmaSenha" id="confirmaSenha">
     </p>
+
     <input type="submit" value="Enviar">
 
     <?php

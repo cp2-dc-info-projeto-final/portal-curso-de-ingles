@@ -16,6 +16,13 @@
         exit();
     }
 
+    if (strlen($senha) != 8) {    
+        $erro = "A senha não têm apenas 8 dígitos.";        
+        $_SESSION["erro"] = $erro;
+        header("Location: cadastroView.php");
+        exit();
+    }
+
     $erro = "";
 
     if (cadastraUsuario($nome, $email, $senha) == true) {

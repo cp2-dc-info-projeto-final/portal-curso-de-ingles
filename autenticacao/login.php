@@ -2,11 +2,11 @@
 
     function autentica($email, $senha) {
         
-        $connection = mysqli_connect("localhost", "root", "", "lp3");
+        $connection = mysqli_connect("localhost", "root", "", "portalcursodeingles");
  
         // Check connection
         if($connection === false){
-            die("Erro de Conecção" . mysqli_connect_error());
+            die("Erro de conecção nessa karaia" . mysqli_connect_error());
         }
         
         $sql = "SELECT senha,nome FROM usuario WHERE email='$email'";

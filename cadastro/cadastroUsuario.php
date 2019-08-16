@@ -2,11 +2,11 @@
     
     function cadastraUsuario($nome, $email, $senha) {
 
-        $connection = mysqli_connect("localhost", "root", "", "lp3");
+        $connection = mysqli_connect("localhost", "root", "", "portalcursodeingles");
  
         // Check connection
         if($connection === false){
-            die("Deu ruim mano!" . mysqli_connect_error());
+            die("Mano acho q n ta rolando aqui o  mysql :v" . mysqli_connect_error());
         }
 
         $sql = "SELECT id FROM usuario WHERE email='$email'";
@@ -22,13 +22,12 @@
             return false;
         }
 
-        $sql = "INSERT INTO usuario (nome, email, senha) VALUES
-                ('$nome', '$email', '$hash')";
+        $sql = "INSERT INTO usuario (nome, email, senha) VALUES('$nome', '$email', '$hash')";
 
         if(mysqli_query($connection, $sql)){
             return true;
         } else{
-            die("Erro ao efetuar cadastro $sql. " . mysqli_error($connection));
+            die("deu um erro fudido ao tentar fazer o cadastro, tenta de novo sla $sql. " . mysqli_error($connection));
         }
 
         mysqli_close($connection);

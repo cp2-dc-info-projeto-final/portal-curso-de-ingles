@@ -15,6 +15,11 @@
         <label for="senha">Senha</label>
         <input type="password" name="senha" id="senha">
     </p>
+    <p>
+        <label for="senha">Tipo de Usuário</label>
+        <input type="number" name="tipoUsuario" id="tipoUsuario" min="1" max="2">
+        <label for="senha">Digite 1 para aluno ou 2 para professor</label>
+    </p>
     <input type="submit" value="Enviar">
     <?php
         session_start();
