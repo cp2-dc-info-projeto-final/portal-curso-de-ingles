@@ -9,7 +9,7 @@
             die("Erro de conecção nessa karaia" . mysqli_connect_error());
         }
         
-        $sql = "SELECT senha,nome FROM usuario WHERE email='$email'";
+        $sql = "SELECT senha FROM usuario WHERE email='$email'";
     
         $result = mysqli_query($connection, $sql);
         

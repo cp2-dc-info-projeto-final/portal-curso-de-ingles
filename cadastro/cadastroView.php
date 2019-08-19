@@ -40,7 +40,7 @@
     ?>
     
     <p>
-        <a href="formLogin.php">Login</a>
+        <a href="../autenticacao/LoginView.php">Login</a>
     </p>
 </form>
 </body>

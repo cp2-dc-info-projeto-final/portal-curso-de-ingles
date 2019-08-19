@@ -22,7 +22,7 @@
             return false;
         }
 
-        $sql = "INSERT INTO usuario (nome, email, senha, dataNasc) VALUES('$nome', '$email', '$hash', $dataNasc)";
+        $sql = "INSERT INTO usuario (nome, email, senha, dataNasc, tipo) VALUES('$nome', '$email', '$hash', '$dataNasc', 1)";
 
         if(mysqli_query($connection, $sql)){
             return true;

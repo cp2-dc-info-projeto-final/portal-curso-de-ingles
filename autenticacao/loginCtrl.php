@@ -4,11 +4,10 @@
 
     $email = $_POST["email"];
     $senha = $_POST["senha"];
-    $tipoUsuario = $_POST["tipoUsuario"];
         
     session_start();
 
-    if (autentica($email, $senha, $tipoUsuario) == true) {
+    if (autentica($email, $senha) == true) {
         session_unset();
         $_SESSION["nome"] = $row["nome"]; 
         header("Location: alunoView.php"); 
