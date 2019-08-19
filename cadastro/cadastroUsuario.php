@@ -1,6 +1,6 @@
 <?php
     
-    function cadastraUsuario($nome, $email, $senha) {
+    function cadastraUsuario($nome, $email, $senha, $dataNasc) {
 
         $connection = mysqli_connect("localhost", "root", "", "portalcursodeingles");
  
@@ -22,7 +22,7 @@
             return false;
         }
 
-        $sql = "INSERT INTO usuario (nome, email, senha) VALUES('$nome', '$email', '$hash')";
+        $sql = "INSERT INTO usuario (nome, email, senha, dataNasc) VALUES('$nome', '$email', '$hash', $dataNasc)";
 
         if(mysqli_query($connection, $sql)){
             return true;

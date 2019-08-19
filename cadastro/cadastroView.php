@@ -24,6 +24,10 @@
         <label for="senha">Confirmação</label>
         <input type="password" name="confirmaSenha" id="confirmaSenha">
     </p>
+    <p>
+        <label for="dataNasc">Data de nascimento</label>
+        <input type="date" name="dataNasc" id="dataNasc">
+    </p>
 
     <input type="submit" value="Enviar">
 

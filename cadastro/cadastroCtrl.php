@@ -6,6 +6,7 @@
     $email = $_POST["email"];
     $senha = $_POST["senha"];
     $confirmaSenha = $_POST["confirmaSenha"];
+    $dataNasc = $_POST["dataNasc"];
 
     session_start();
 
@@ -25,7 +26,7 @@
 
     $erro = "";
 
-    if (cadastraUsuario($nome, $email, $senha) == true) {
+    if (cadastraUsuario($nome, $email, $senha, $dataNasc) == true) {
         session_unset();
         header("Location: ../autenticacao/loginView.php");
         exit();
