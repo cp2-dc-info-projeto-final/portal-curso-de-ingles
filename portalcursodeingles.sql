@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 20-Ago-2019 �s 01:09
--- Vers�o do servidor: 5.7.17
+-- Generation Time: 26-Ago-2019 às 21:37
+-- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -90,8 +90,20 @@ CREATE TABLE `palavra_questao` (
 CREATE TABLE `questao` (
   `idquestao` int(3) NOT NULL,
   `enunciado` varchar(500) DEFAULT NULL,
+  `opA` varchar(120) NOT NULL,
+  `opB` varchar(120) NOT NULL,
+  `opC` varchar(120) NOT NULL,
+  `opD` varchar(120) NOT NULL,
   `gabarito` varchar(500) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `questao`
+--
+
+INSERT INTO `questao` (`idquestao`, `enunciado`, `opA`, `opB`, `opC`, `opD`, `gabarito`) VALUES
+(2, 'quantas beterrabas cabem em 3 caixotes que cabe uma beterraba?', '5', '3', '4', '-23ÂºC', '3 beterrabas - opÃ§Ã£o B'),
+(3, 'beterrabona', '123', '15', 'asd', 'xpto', 'xpto - opÃ§Ã£o D');
 
 -- --------------------------------------------------------
 
@@ -118,6 +130,13 @@ CREATE TABLE `usuario` (
   `id` int(6) NOT NULL,
   `tipo` int(1) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `usuario`
+--
+
+INSERT INTO `usuario` (`nome`, `email`, `senha`, `datanasc`, `id`, `tipo`) VALUES
+('Alan', 'alan123@gmail.com', '$2y$10$X4q0K2XujtNuUhSLhwzhd.FnyWxz8c0N/f3vuAyOBggcaOprtsiV2', '1985-11-21', 1, 1);
 
 --
 -- Indexes for dumped tables
@@ -174,7 +193,7 @@ ALTER TABLE `questao_exercicio`
 -- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`email`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -209,12 +228,17 @@ ALTER TABLE `palavra_questao`
 -- AUTO_INCREMENT for table `questao`
 --
 ALTER TABLE `questao`
-  MODIFY `idquestao` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `idquestao` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `questao_exercicio`
 --
 ALTER TABLE `questao_exercicio`
-  MODIFY `idexercicio` int(11) NOT NULL AUTO_INCREMENT;COMMIT;
+  MODIFY `idexercicio` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

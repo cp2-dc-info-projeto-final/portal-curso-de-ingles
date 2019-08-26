@@ -23,7 +23,7 @@
 
     if (enviarQuestao($enunciado, $opA, $opB, $opC, $opD, $gabarito) == true) {
         session_unset();
-        header("Location: ../autenticacao/enviarView.php");
+        header("Location: enviarView.php");
         exit();
     } else {
         $erro = "essa questão já foi enviada";        
