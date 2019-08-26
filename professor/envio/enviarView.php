@@ -5,7 +5,7 @@
 <title>Atualizar Questões</title>
 </head>
 <body>
-<h1>Cadastro</h1>
+<h1>Criação de questões</h1>
 <form action="enviarCtrl.php" method="post">
     <p>
         <label for="enunciado">Enunciado</label>
