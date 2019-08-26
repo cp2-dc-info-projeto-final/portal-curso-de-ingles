@@ -7,10 +7,18 @@
         
     session_start();
 
+    if (empty($senha)) {
+        $erro = "A senha não pode ser vazia";
+        $_SESSION["erro"] = $erro;
+        header("Location: loginView.php");
+        exit();
+    }
+
+
     if (autentica($email, $senha) == true) {
         session_unset();
         $_SESSION["nome"] = $row["nome"]; 
-        header("Location: alunoView.php"); 
+        header("Location: ../aluno/alunoView.php"); 
         /*
         essa porra tá comentada por enquanto pq eu n sei se vai funcionar e
         AH MANO SLA FDS EU COMENTO OQ EU QUISER TO NEM AI, CÓDIGO TÓXICO

@@ -19,15 +19,18 @@
                 $hash = $row["senha"];
     
                 if (password_verify($senha, $hash)) {
+                    mysqli_close($connection);
                     return true;
                 } else {
+                    mysqli_close($connection);
                     return false;
                 }
             }
         } else {
+            mysqli_close($connection);
             return false;
         }
 
-        mysqli_close($connection);
+        
     }   
 ?>

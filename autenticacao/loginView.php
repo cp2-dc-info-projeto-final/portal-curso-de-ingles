@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Login</h1>
-<form action="login.php" method="post">
+<form action="loginCtrl.php" method="post">
     <p>
         <label for="email">Email</label>
         <input type="text" name="email" id="email">
