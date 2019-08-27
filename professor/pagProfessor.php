@@ -12,25 +12,19 @@
 <body>
 
 <div class="jumbotron text-center">
-  <a href="questoes.html"><img src="marcar.png"></a>
+    <h1> Página do Professor </h1>
 </div>
   
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <a href="questoes.html"><img src="marcar.png"></a>
     </div>
     <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <a href="C:\Users\labcaxias\Desktop\portal-curso-de-ingles/questoes.html"><img src="inserir.png"></a>
     </div>
     <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <a href="C:\Users\labcaxias\Desktop\portal-curso-de-ingles/questoes.html"><img src="inserirp.png"></a>
     </div>
   </div>
 </div>
