@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Login</title>
-  <link rel="shortcut icon" href=" ico.ico" type="images/x-icon"/>
+  <title>Log In</title>
+  <link rel="shortcut icon" href="ico.ico" type="image/x-icon" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
   <h2>Log In</h2>
   <p>In this example, we use <code>.needs-validation</code>, which will add the validation effect AFTER the form has been submitting (if there's anything missing).</p>
   <p>Try to submit this form before filling out the input fields, to see the effect.</p>
-  <form action="/action_page.php" class="needs-validation" novalidate METHOD="post">
+  <form action="loginCtrl.php" class="needs-validation" novalidate method="post">
     <div class="form-group">
       <label for="email">Email:</label>
       <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
@@ -24,8 +24,8 @@
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
     <div class="form-group">
-      <label for="senha">Email:</label>
-      <input type="password" class="form-control" id="email" placeholder="Enter password" name="senha" required>
+      <label for="senha">Senha:</label>
+      <input type="password" class="form-control" id="senha" placeholder="Enter password" name="senha" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
@@ -47,7 +47,7 @@
     ?>
     </div>
     <div>
-      <a href="../cadastro/cadastroView.php">Cadastre-se</a>
+    <a href="../cadastro/cadastroView.php">Cadastre-se</a>
     </div>
   </form>
 </div>
