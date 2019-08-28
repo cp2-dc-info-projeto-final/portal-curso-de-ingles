@@ -12,24 +12,24 @@
         <input type="text" name="enunciado" id="enunciado">
     </p>
     <p>
-        <label for="opA">Opção A</label>
+        <label for="opA">Opção 1</label>
         <input type="text" name="opA" id="opA">
     </p>
     <p>
-        <label for="opB">Opção B</label>
+        <label for="opB">Opção 2</label>
         <input type="text" name="opB" id="opB">
     </p>
     <p>
-        <label for="opC">Opção C</label>
+        <label for="opC">Opção 3</label>
         <input type="text" name="opC" id="op´C">
     </p>
     <p>
-        <label for="opD">Opção D</label>
+        <label for="opD">Opção 4</label>
         <input type="text" name="opD" id="opD">
     </p>
     <p>
         <label for="gabarito">Gabarito</label>
-        <input type="text" name="gabarito" id="gabarito">
+        <input type="number" min="1" max="4" name="gabarito" id="gabarito">
     </p>
 
     
