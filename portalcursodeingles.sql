@@ -94,7 +94,7 @@ CREATE TABLE `questao` (
   `opB` varchar(120) NOT NULL,
   `opC` varchar(120) NOT NULL,
   `opD` varchar(120) NOT NULL,
-  `gabarito` varchar(500) DEFAULT NULL
+  `gabarito` int NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
