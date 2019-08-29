@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Formulário de Cadastro</title>
+</head>
+<body>
+<h1>Cadastro</h1>
+<form action="cadastroCtrl.php" method="post">
+    <p>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+    </p>
+    <p>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+    </p>
+    <p>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+        <label for="8digitos">DIGITA UMA SENHA DE 8 DIGITOS PELO AMOR DE SANTA NAY</label>
+    </p>
+    <p>
+        <label for="senha">Confirmação</label>
+        <input type="password" name="confirmaSenha" id="confirmaSenha">
+    </p>
+    <p>
+        <label for="dataNasc">Data de nascimento</label>
+        <input type="date" name="dataNasc" id="dataNasc">
+    </p>
+
+    <input type="submit" value="Enviar">
+
+    <?php
+        session_start();
+        if(array_key_exists('erro', $_SESSION) == true){
+            $erro = $_SESSION["erro"];
+            echo "<br><b>$erro</b>";
+        }
+    ?>
+    
+    <p>
+        <a href="../autenticacao/LoginView.php">Login</a>
+    </p>
+</form>
+</body>
+</html>
