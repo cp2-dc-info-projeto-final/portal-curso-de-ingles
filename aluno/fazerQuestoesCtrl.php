@@ -1,6 +1,6 @@
 <?php
 
-    require_once('verQuestoes.php');
+    require_once('fazerQuestoes.php');
 
     function exibirQuestoes() {
         return buscarQuestoes();

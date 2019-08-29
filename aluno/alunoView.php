@@ -29,7 +29,7 @@
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
     <div class="col-sm-4">
-    <a href="verquestoesview.php"><img src="exercicio.jpg"></a>        
+    <a href="fazerQuestoesView.php"><img src="exercicio.jpg"></a>        
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
