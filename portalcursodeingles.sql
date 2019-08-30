@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 26-Ago-2019 às 21:37
+-- Generation Time: 31-Ago-2019 às 00:46
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
 
@@ -19,8 +19,63 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
+-- Database: `favatto`
+--
+CREATE DATABASE IF NOT EXISTS `favatto` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `favatto`;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `cliente`
+--
+
+CREATE TABLE `cliente` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(80) DEFAULT NULL,
+  `data_nasc` date DEFAULT NULL,
+  `email` varchar(125) DEFAULT NULL,
+  `telefone` varchar(11) DEFAULT NULL,
+  `cpf` varchar(11) DEFAULT NULL,
+  `logi` varchar(10) DEFAULT NULL,
+  `senha` varchar(100) DEFAULT NULL,
+  `sexo` varchar(10) DEFAULT NULL,
+  `Rua` varchar(120) NOT NULL,
+  `Municipio` varchar(30) NOT NULL,
+  `Complemento` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `cliente`
+--
+
+INSERT INTO `cliente` (`id`, `nome`, `data_nasc`, `email`, `telefone`, `cpf`, `logi`, `senha`, `sexo`, `Rua`, `Municipio`, `Complemento`) VALUES
+(1, NULL, NULL, NULL, NULL, NULL, NULL, '$2y$10$hd8y5A2HsFew3eZK448bluApuM9D2AqsVZO8/X9ouEfG9O4CtfxqG', NULL, '', '', ''),
+(5, 'Caio dos Santos', '2001-07-23', 'jessiquinhaestanislau0406@gmail.com', '21991811438', '10575799714', 'telma_evan', '$2y$10$m2pghWBRMxYck1Y7NSA64uV3RDv/DMyk7MqE20gzduxPrcLKYELny', 'Masculino', '', '', '');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `cliente`
+--
+ALTER TABLE `cliente`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `cliente`
+--
+ALTER TABLE `cliente`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;--
 -- Database: `portalcursodeingles`
 --
+CREATE DATABASE IF NOT EXISTS `portalcursodeingles` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `portalcursodeingles`;
 
 -- --------------------------------------------------------
 
@@ -94,7 +149,7 @@ CREATE TABLE `questao` (
   `opB` varchar(120) NOT NULL,
   `opC` varchar(120) NOT NULL,
   `opD` varchar(120) NOT NULL,
-  `gabarito` int NOT NULL
+  `gabarito` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -102,8 +157,10 @@ CREATE TABLE `questao` (
 --
 
 INSERT INTO `questao` (`idquestao`, `enunciado`, `opA`, `opB`, `opC`, `opD`, `gabarito`) VALUES
-(2, 'quantas beterrabas cabem em 3 caixotes que cabe uma beterraba?', '5', '3', '4', '-23ÂºC', '3 beterrabas - opÃ§Ã£o B'),
-(3, 'beterrabona', '123', '15', 'asd', 'xpto', 'xpto - opÃ§Ã£o D');
+(2, 'quanto são dois hipopótamos mais dois hipopótamos?', '85 metros', '4 Hipopótamos', '-273ºC', 'fotossíntese', 2),
+(3, 'quantas beterrabas cabem em 3 caixotes que cabe uma beterraba?', '5', '3', '4', '-23ÂºC', 2),
+(4, 'beterrabona', '123', '15', 'asd', 'xpto', 4),
+(5, 'Quantas milenys cabem em 3 potes?', 'uma mileny', 'duas', 'trÃªs', '568', 2);
 
 -- --------------------------------------------------------
 
@@ -136,7 +193,10 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`nome`, `email`, `senha`, `datanasc`, `id`, `tipo`) VALUES
-('Alan', 'alan123@gmail.com', '$2y$10$X4q0K2XujtNuUhSLhwzhd.FnyWxz8c0N/f3vuAyOBggcaOprtsiV2', '1985-11-21', 1, 1);
+('asd', 'asd', '$2y$10$/Ht3HIIk79DbrC82DVPzc.lOOVKRH6HHP34cyekHP4nP44JpnLKnq', '2019-01-01', 1, 1),
+('asd2', 'asd2', '$2y$10$qwy1ZNYGeFgy8yzyX1HHd.IS9oE09QAGrxhfvsWD/b9Ju8y/sm5Lq', '2019-01-01', 2, 1),
+('xpto', 'xpto', '$2y$10$zMMf5P.zppZNaBfBn9Xl4eRNqdPOy6wJBugfItaGfDYBZqU25ta2q', '2004-09-06', 3, 1),
+('Eliza Das Beths', 'beterrabinhas@gmail.com', '$2y$10$MOM0FnHKoDAMJWig9i92d.U2/U7h22n9Y8RV47O0J0u4APWcHq3mu', '2001-04-10', 4, 1);
 
 --
 -- Indexes for dumped tables
@@ -228,7 +288,7 @@ ALTER TABLE `palavra_questao`
 -- AUTO_INCREMENT for table `questao`
 --
 ALTER TABLE `questao`
-  MODIFY `idquestao` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idquestao` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `questao_exercicio`
 --
@@ -238,7 +298,7 @@ ALTER TABLE `questao_exercicio`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
