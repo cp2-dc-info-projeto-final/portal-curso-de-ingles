@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 31-Ago-2019 às 00:46
+-- Generation Time: 31-Ago-2019 às 00:54
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
 
@@ -19,63 +19,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `favatto`
---
-CREATE DATABASE IF NOT EXISTS `favatto` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `favatto`;
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `cliente`
---
-
-CREATE TABLE `cliente` (
-  `id` int(11) NOT NULL,
-  `nome` varchar(80) DEFAULT NULL,
-  `data_nasc` date DEFAULT NULL,
-  `email` varchar(125) DEFAULT NULL,
-  `telefone` varchar(11) DEFAULT NULL,
-  `cpf` varchar(11) DEFAULT NULL,
-  `logi` varchar(10) DEFAULT NULL,
-  `senha` varchar(100) DEFAULT NULL,
-  `sexo` varchar(10) DEFAULT NULL,
-  `Rua` varchar(120) NOT NULL,
-  `Municipio` varchar(30) NOT NULL,
-  `Complemento` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `cliente`
---
-
-INSERT INTO `cliente` (`id`, `nome`, `data_nasc`, `email`, `telefone`, `cpf`, `logi`, `senha`, `sexo`, `Rua`, `Municipio`, `Complemento`) VALUES
-(1, NULL, NULL, NULL, NULL, NULL, NULL, '$2y$10$hd8y5A2HsFew3eZK448bluApuM9D2AqsVZO8/X9ouEfG9O4CtfxqG', NULL, '', '', ''),
-(5, 'Caio dos Santos', '2001-07-23', 'jessiquinhaestanislau0406@gmail.com', '21991811438', '10575799714', 'telma_evan', '$2y$10$m2pghWBRMxYck1Y7NSA64uV3RDv/DMyk7MqE20gzduxPrcLKYELny', 'Masculino', '', '', '');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `cliente`
---
-ALTER TABLE `cliente`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `cliente`
---
-ALTER TABLE `cliente`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;--
 -- Database: `portalcursodeingles`
 --
-CREATE DATABASE IF NOT EXISTS `portalcursodeingles` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `portalcursodeingles`;
 
 -- --------------------------------------------------------
 
