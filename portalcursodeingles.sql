@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
@@ -33,7 +33,7 @@ CREATE TABLE `aula` (
   `data_aula` date DEFAULT NULL,
   `aluno` int(11) DEFAULT NULL,
   `professor` varchar(50) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+);
 
 -- --------------------------------------------------------
 
@@ -44,7 +44,7 @@ CREATE TABLE `aula` (
 CREATE TABLE `exercicio` (
   `idexercicio` int(11) NOT NULL,
   `nome` varchar(50) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+);
 
 -- --------------------------------------------------------
 
@@ -57,7 +57,7 @@ CREATE TABLE `palavra` (
   `idpalavra` int(11) NOT NULL,
   `sinonimo` varchar(200) DEFAULT NULL,
   `significado` varchar(200) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+);
 
 -- --------------------------------------------------------
 
@@ -68,7 +68,7 @@ CREATE TABLE `palavra` (
 CREATE TABLE `palavra_aluno` (
   `idpalavra` int(11) NOT NULL,
   `idusuario` int(6) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+);
 
 -- --------------------------------------------------------
 
@@ -79,7 +79,7 @@ CREATE TABLE `palavra_aluno` (
 CREATE TABLE `palavra_questao` (
   `idpalavra` int(11) NOT NULL,
   `idquestao` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+);
 
 -- --------------------------------------------------------
 
@@ -95,7 +95,7 @@ CREATE TABLE `questao` (
   `opC` varchar(120) NOT NULL,
   `opD` varchar(120) NOT NULL,
   `gabarito` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+);
 
 --
 -- Extraindo dados da tabela `questao`
@@ -116,7 +116,7 @@ INSERT INTO `questao` (`idquestao`, `enunciado`, `opA`, `opB`, `opC`, `opD`, `ga
 CREATE TABLE `questao_exercicio` (
   `idexercicio` int(11) NOT NULL,
   `idquestao` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+);
 
 -- --------------------------------------------------------
 
@@ -131,7 +131,7 @@ CREATE TABLE `usuario` (
   `datanasc` date NOT NULL,
   `id` int(6) NOT NULL,
   `tipo` int(1) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+);
 
 --
 -- Extraindo dados da tabela `usuario`
