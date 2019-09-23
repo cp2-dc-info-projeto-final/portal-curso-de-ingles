@@ -101,12 +101,6 @@ CREATE TABLE `questao` (
 -- Extraindo dados da tabela `questao`
 --
 
-INSERT INTO `questao` (`idquestao`, `enunciado`, `opA`, `opB`, `opC`, `opD`, `gabarito`) VALUES
-(2, 'quanto são dois hipopótamos mais dois hipopótamos?', '85 metros', '4 Hipopótamos', '-273ºC', 'fotossíntese', 2),
-(3, 'quantas beterrabas cabem em 3 caixotes que cabe uma beterraba?', '5', '3', '4', '-23ÂºC', 2),
-(4, 'beterrabona', '123', '15', 'asd', 'xpto', 4),
-(5, 'Quantas milenys cabem em 3 potes?', 'uma mileny', 'duas', 'trÃªs', '568', 2);
-
 -- --------------------------------------------------------
 
 --
