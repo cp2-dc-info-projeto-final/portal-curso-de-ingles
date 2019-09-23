@@ -33,6 +33,11 @@
       <p>visualizar alunos</p>
       <p>FUS RO DAH</p>
     </div>
+    <div class="col-sm-4">
+    <a href="marcaraula/marcaraulaView.php"><img src="marcaraula.png"></a>        
+      <p>Marcar aula</p>
+      <p>FUS RO DAH</p>
+    </div>
   </div>
 </div>
 
