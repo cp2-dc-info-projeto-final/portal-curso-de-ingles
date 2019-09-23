@@ -19,17 +19,17 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <a href="visualizacao/verQuestoesView.php"><img src="aula.jpg"></a>
+      <a href="visualizacao/verQuestoesView.php"><img src="marcaraula.png"></a>
       <p>visualizar questoes com gabarito</p>
       <p>beterraba ipsum dolor.</p>
     </div>
     <div class="col-sm-4">
-    <a href="envio/enviarView.php"><img src="aula.jpg"></a>
+    <a href="envio/enviarView.php"><img src="inserirquestoes.png"></a>
       <p>criar questoes</p>
       <p>hipopotama quis nostrud exercitation ullamco laboris...</p>
     </div>
     <div class="col-sm-4">
-    <a href="visualizacao/verAlunosView.php"><img src="aula.jpg"></a>        
+    <a href="visualizacao/verAlunosView.php"><img src="montarexercicios.png"></a>        
       <p>visualizar alunos</p>
       <p>FUS RO DAH</p>
     </div>

@@ -30,9 +30,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `aula` (
   `idaula` int(11) NOT NULL,
-  `data_aula` date DEFAULT NULL,
-  `aluno` int(11) DEFAULT NULL,
-  `professor` varchar(50) DEFAULT NULL
+  `data_aula` date,
+  `aluno` int(11),
+  `professor` varchar(50)
 );
 
 -- --------------------------------------------------------
@@ -43,8 +43,8 @@ CREATE TABLE `aula` (
 
 CREATE TABLE `exercicio` (
   `idexercicio` int(11) NOT NULL,
-  `nome` varchar(50) DEFAULT NULL
-);
+  `nome` varchar(50) 
+  );
 
 -- --------------------------------------------------------
 
@@ -53,10 +53,10 @@ CREATE TABLE `exercicio` (
 --
 
 CREATE TABLE `palavra` (
-  `palavra` varchar(50) DEFAULT NULL,
+  `palavra` varchar(50) NOT NULL,
   `idpalavra` int(11) NOT NULL,
-  `sinonimo` varchar(200) DEFAULT NULL,
-  `significado` varchar(200) DEFAULT NULL
+  `sinonimo` varchar(200),
+  `significado` varchar(200)
 );
 
 -- --------------------------------------------------------
@@ -89,7 +89,7 @@ CREATE TABLE `palavra_questao` (
 
 CREATE TABLE `questao` (
   `idquestao` int(3) NOT NULL,
-  `enunciado` varchar(500) DEFAULT NULL,
+  `enunciado` varchar(500) NOT NULL,
   `opA` varchar(120) NOT NULL,
   `opB` varchar(120) NOT NULL,
   `opC` varchar(120) NOT NULL,
@@ -136,13 +136,6 @@ CREATE TABLE `usuario` (
 --
 -- Extraindo dados da tabela `usuario`
 --
-
-INSERT INTO `usuario` (`nome`, `email`, `senha`, `datanasc`, `id`, `tipo`) VALUES
-('asd', 'asd', '$2y$10$/Ht3HIIk79DbrC82DVPzc.lOOVKRH6HHP34cyekHP4nP44JpnLKnq', '2019-01-01', 1, 1),
-('asd2', 'asd2', '$2y$10$qwy1ZNYGeFgy8yzyX1HHd.IS9oE09QAGrxhfvsWD/b9Ju8y/sm5Lq', '2019-01-01', 2, 1),
-('xpto', 'xpto', '$2y$10$zMMf5P.zppZNaBfBn9Xl4eRNqdPOy6wJBugfItaGfDYBZqU25ta2q', '2004-09-06', 3, 1),
-('Eliza Das Beths', 'beterrabinhas@gmail.com', '$2y$10$MOM0FnHKoDAMJWig9i92d.U2/U7h22n9Y8RV47O0J0u4APWcHq3mu', '2001-04-10', 4, 1);
-
 --
 -- Indexes for dumped tables
 --
