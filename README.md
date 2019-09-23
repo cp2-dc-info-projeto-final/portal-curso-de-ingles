@@ -31,7 +31,6 @@
    
 ## Funções de cada integrante:
    ### Elizabeth e Mileny:
-   - Geração de ids do aluno;
    - Cadastro;
    - Login;
    - Atualização de exercícios;
@@ -45,6 +44,6 @@
    - Inserção de palavras novas;
    - Biblioteca de Palavras;
    - Página do professor;
-   - Notificação;
+  
    
    
