@@ -12,9 +12,13 @@
 </head>
 <body>
 
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Sign in</h1>      
+  </div>
+</div>
+
 <div class="container">
-  <h2>Log In</h2>
-  <p>In this example, we use <code>.needs-validation</code>, which will add the validation effect AFTER the form has been submitting (if there's anything missing).</p>
   <p>Try to submit this form before filling out the input fields, to see the effect.</p>
   <form action="loginCtrl.php" class="needs-validation" novalidate method="post">
     <div class="form-group">
