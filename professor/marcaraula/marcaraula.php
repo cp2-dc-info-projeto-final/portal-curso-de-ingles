@@ -1,6 +1,6 @@
 <?php
 
-function buscarAlunos() {
+function buscarAluno() {
 
     $connection = mysqli_connect("localhost", "root", "", "portalcursodeingles");
 
@@ -9,34 +9,31 @@ function buscarAlunos() {
         die("ERROR" . mysqli_connect_error());
     }
 
-    $sql = "SELECT Nome, idusuario FROM usuario";
+    $sql = "SELECT nome, id FROM usuario";
+    $verif = "SELECT tipo FROM usuario";
 
     $result = mysqli_query($connection, $sql);
 
     $erro = "";
-    $questoes = [];
-    
+    $alunos = [];
+        
     if(mysqli_query($connection, $sql)) {
         if (mysqli_num_rows($result) > 0) {
-            $questao = [];
+            if($verif==="1"){
+            $usuario = [];
             while ($row = mysqli_fetch_assoc($result)) {
-                $questao['idquestao'] = $row['idquestao'];
-                $questao['enunciado'] = $row['enunciado'];
-                $questao['opA'] = $row['opA'];
-                $questao['opB'] = $row['opB'];
-                $questao['opC'] = $row['opC'];
-                $questao['opD'] = $row['opD'];
-                $questao['gabarito'] = $row['gabarito'];
-
-                array_push($questoes, $questao);
+                $usuario['id'] = $row['id'];
+                $usuario['nome'] = $row['nome'];
+                array_push($alunos, $usuario);
             }
         }
+        }
     } else{
-        die("Erro ao buscar questões com a consulta $sql. " . mysqli_error($connection));
+        die("Erro ao buscar alunos $sql. " . mysqli_error($connection));
     }  
 
     mysqli_close($connection);
-    return $questoes;
+    return $alunos;
 }
 
 ?>
