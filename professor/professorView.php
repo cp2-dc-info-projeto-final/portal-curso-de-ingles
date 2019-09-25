@@ -19,24 +19,24 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <a href="visualizacao/verQuestoesView.php"><img src="marcaraula.png"></a>
-      <p>visualizar questoes com gabarito</p>
-      <p>beterraba ipsum dolor.</p>
+      <a href="visualizacao/verQuestoesView.php"><img src="ola.png"></a>
+      <p>Visualizar questoes com gabarito</p>
     </div>
     <div class="col-sm-4">
-    <a href="envio/enviarView.php"><img src="inserirquestoes.png"></a>
-      <p>criar questoes</p>
-      <p>hipopotama quis nostrud exercitation ullamco laboris...</p>
+    <a href="envio/enviarView.php"><img src="ola.png"></a>
+      <p>Criar questoes</p>
     </div>
     <div class="col-sm-4">
-    <a href="visualizacao/verAlunosView.php"><img src="montarexercicios.png"></a>        
-      <p>visualizar alunos</p>
-      <p>FUS RO DAH</p>
+    <a href="visualizacao/verAlunosView.php"><img src="ola.png"></a>        
+      <p>Visualizar alunos</p>
     </div>
     <div class="col-sm-4">
-    <a href="marcaraula/marcaraulaView.php"><img src="marcaraula.png"></a>        
+    <a href="marcaraula/marcaraulaView.php"><img src="ola.png"></a>        
       <p>Marcar aula</p>
-      <p>FUS RO DAH</p>
+    </div>
+    <div class="col-sm-4">
+    <a href="adicionarpalavras/adspalavrasView.php"><img src="ola.png"></a>        
+      <p>Adicionar palavras</p>
     </div>
   </div>
 </div>

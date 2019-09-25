@@ -29,13 +29,13 @@
         <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
     </div>
     <div class="form-group">
-        <label for="senha">Senha</label>
+        <label for="sennha">Senha</label>
         <input type="password" class="form-control" id="senha" placeholder="Enter password" name="senha">
         <label for="8digitos">DIGITA UMA SENHA DE 8 DIGITOS PELO AMOR DE SANTA NAY</label>
     </div>
     <div class="form-group"><p>
-        <label for="senha">Confirmação</label>
-        <input type="password" class="form-control" id="confirmasenha" placeholder="Enter password" name="confirmasenha">
+        <label for="confimacao">Confirmação</label>
+        <input type="password" class="form-control" id="confirmaSenha" placeholder="Enter password" name="confirmaSenha">
     </div>
     <div class="form-group">
         <label for="dataNasc">Data de nascimento</label>
