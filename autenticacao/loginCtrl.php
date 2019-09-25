@@ -8,7 +8,7 @@
     session_start();
 
     if (empty($senha)) {
-        $erro = "A senha não pode ser vazia";
+        $erro = "Password cannot be empty";
         $_SESSION["erro"] = $erro;
         header("Location: loginView.php");
         exit();
@@ -19,16 +19,12 @@
         session_unset();
         $_SESSION["nome"] = $row["nome"]; 
         header("Location: ../aluno/alunoView.php"); 
-        /*
-        essa porra tá comentada por enquanto pq eu n sei se vai funcionar e
-        AH MANO SLA FDS EU COMENTO OQ EU QUISER TO NEM AI, CÓDIGO TÓXICO
-        if($tipoUsuario == 1){header("Location: alunoView.php");}
-        if($tipoUsuario == 2){header("Location: professorView.php");}
-        */
+        
+        
         exit();
     }
     else {
-        $erro = "Tipo do usuário, login ou senha incorretos";        
+        $erro = "Incorrect username, login or password";        
         $_SESSION["erro"] = $erro;
         header("Location: loginView.php");
         exit();

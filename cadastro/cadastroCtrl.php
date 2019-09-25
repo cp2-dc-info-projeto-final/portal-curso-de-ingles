@@ -11,14 +11,14 @@
     session_start();
 
     if ($senha != $confirmaSenha) {    
-        $erro = "As senhas não coincidem";        
+        $erro = "Passwords do not match";        
         $_SESSION["erro"] = $erro;
         header("Location: cadastroView.php");
         exit();
     }
 
     if (strlen($senha) != 8) {    
-        $erro = "A senha não têm apenas 8 dígitos.";        
+        $erro = "The password does not have only 8 digits";        
         $_SESSION["erro"] = $erro;
         header("Location: cadastroView.php");
         exit();
@@ -31,7 +31,7 @@
         header("Location: ../autenticacao/loginView.php");
         exit();
     } else {
-        $erro = "E-mail indisponível";        
+        $erro = "Email unavailable";        
         $_SESSION["erro"] = $erro;
         header("Location: cadastroView.php");
         exit();

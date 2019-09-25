@@ -2,39 +2,39 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Atualizar Questões</title>
+<title>Create Questions</title>
 </head>
 <body>
-<h1>Criação de questões</h1>
+<h1>Question Creation</h1>
 <form action="enviarCtrl.php" method="post">
     <p>
-        <label for="enunciado">Enunciado</label>
+        <label for="enunciado">Statement</label>
         <input type="text" name="enunciado" id="enunciado">
     </p>
     <p>
-        <label for="opA">Opção 1</label>
+        <label for="opA">Option 1</label>
         <input type="text" name="opA" id="opA">
     </p>
     <p>
-        <label for="opB">Opção 2</label>
+        <label for="opB">Option 2</label>
         <input type="text" name="opB" id="opB">
     </p>
     <p>
-        <label for="opC">Opção 3</label>
+        <label for="opC">Option 3</label>
         <input type="text" name="opC" id="op´C">
     </p>
     <p>
-        <label for="opD">Opção 4</label>
+        <label for="opD">Option 4</label>
         <input type="text" name="opD" id="opD">
     </p>
     <p>
-        <label for="gabarito">Gabarito</label>
+        <label for="gabarito">Feedback</label>
         <input type="number" min="1" max="4" name="gabarito" id="gabarito">
     </p>
 
     
 
-    <input type="submit" value="Enviar">
+    <input type="submit" value="submit">
 
     <?php
         session_start();

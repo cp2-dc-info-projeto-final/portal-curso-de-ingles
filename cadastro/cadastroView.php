@@ -13,15 +13,15 @@
 <body>
 
 <div class="jumbotron text-center">
-  <h1>Cadastro</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  <h1>Sign up</h1>
+
 </div>
 
 
 <div class="container">    
 <form action="cadastroCtrl.php" method="post">
     <div class="form-group">
-        <label for="nome">Nome</label>
+        <label for="nome">Name</label>
         <input type="name" class="form-control" id="nome" placeholder="Enter name" name="nome">
     </div>
     <div class="form-group">
@@ -29,21 +29,21 @@
         <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
     </div>
     <div class="form-group">
-        <label for="sennha">Senha</label>
+        <label for="sennha">Password</label>
         <input type="password" class="form-control" id="senha" placeholder="Enter password" name="senha">
-        <label for="8digitos">DIGITA UMA SENHA DE 8 DIGITOS PELO AMOR DE SANTA NAY</label>
+        <label for="8digitos">Enter an 8 digit password, please</label>
     </div>
     <div class="form-group"><p>
-        <label for="confimacao">Confirmação</label>
+        <label for="confimacao">Confirmation</label>
         <input type="password" class="form-control" id="confirmaSenha" placeholder="Enter password" name="confirmaSenha">
     </div>
     <div class="form-group">
-        <label for="dataNasc">Data de nascimento</label>
+        <label for="dataNasc">Date of birth</label>
         <input type="date" class="form-control" name="dataNasc" id="dataNasc">
     </div>
 
     <div>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Submit">
     </div>
 
     <?php

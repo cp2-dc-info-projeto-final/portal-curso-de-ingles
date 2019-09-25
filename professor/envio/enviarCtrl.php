@@ -11,7 +11,7 @@
     session_start();
 
     if ((empty($enunciado)) || (empty($opA)) || (empty($opB)) || (empty($opC)) || (empty($opD)) || (empty($gabarito)) ) {
-        $erro = "Falta complementar os dados necessários";        
+        $erro = "Complementary data missing";        
         $_SESSION["erro"] = $erro;
         header("Location: enviarView.php");
         exit();
@@ -26,7 +26,7 @@
         header("Location: enviarView.php");
         exit();
     } else {
-        $erro = "essa questão já foi enviada";        
+        $erro = "This question has already been submitted";        
         $_SESSION["erro"] = $erro;
         header("Location: enviarView.php");
         exit();

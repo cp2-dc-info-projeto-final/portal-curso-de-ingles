@@ -28,14 +28,14 @@
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
     <div class="form-group">
-      <label for="senha">Senha:</label>
+      <label for="senha">Password:</label>
       <input type="password" class="form-control" id="senha" placeholder="Enter password" name="senha" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
     <div class="form-group form-check">
       <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+        <input class="form-check-input" type="checkbox" name="remember" required> I agree on terms.
         <div class="valid-feedback">Valid.</div>
         <div class="invalid-feedback">Check this checkbox to continue.</div>
       </label>
@@ -51,7 +51,7 @@
     ?>
     </div>
     <div>
-    <a href="../cadastro/cadastroView.php">Cadastre-se</a>
+    <a href="../cadastro/cadastroView.php">Sign up</a>
     </div>
   </form>
 </div>

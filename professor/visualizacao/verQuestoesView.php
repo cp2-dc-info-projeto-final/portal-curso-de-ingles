@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>PORRAQNFUNCIONANOMVCENTFIZNOVIEWEFDS</title>
+        <title>Question display</title>
         <meta charset="UTF-8">
     </head>
 <body>

@@ -12,31 +12,27 @@
 <body>
 
 <div class="jumbotron text-center">
-  <h1>Página do professor</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  <h1>Teacher Page</h1>
+
 </div>
   
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
       <a href="visualizacao/verQuestoesView.php"><img src="ola.png"></a>
-      <p>Visualizar questoes com gabarito</p>
+      <p>View questions with feedback</p>
     </div>
     <div class="col-sm-4">
     <a href="envio/enviarView.php"><img src="ola.png"></a>
-      <p>Criar questoes</p>
+      <p>Create questions</p>
     </div>
     <div class="col-sm-4">
     <a href="visualizacao/verAlunosView.php"><img src="ola.png"></a>        
-      <p>Visualizar alunos</p>
+      <p>View users</p>
     </div>
     <div class="col-sm-4">
     <a href="marcaraula/marcaraulaView.php"><img src="ola.png"></a>        
-      <p>Marcar aula</p>
-    </div>
-    <div class="col-sm-4">
-    <a href="adicionarpalavras/adspalavrasView.php"><img src="ola.png"></a>        
-      <p>Adicionar palavras</p>
+      <p>Schedule class</p>
     </div>
   </div>
 </div>

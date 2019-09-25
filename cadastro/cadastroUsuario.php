@@ -6,7 +6,7 @@
  
         // Check connection
         if($connection === false){
-            die("Mano acho q n ta rolando aqui o  mysql :v" . mysqli_connect_error());
+            die("Erro no mysql " . mysqli_connect_error());
         }
 
         $sql = "SELECT id FROM usuario WHERE email='$email'";
@@ -27,7 +27,7 @@
         if(mysqli_query($connection, $sql)){
             return true;
         } else{
-            die("deu um erro fudido ao tentar fazer o cadastro, tenta de novo sla $sql. " . mysqli_error($connection));
+            die("Erro no cadastro $sql. " . mysqli_error($connection));
         }
 
         mysqli_close($connection);

@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Marcar aula</title>
+        <title>Schedule class</title>
         <link rel="shortcut icon" href="ico.ico" type="image/x-icon" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,11 +11,11 @@
     </head>
     <body>
         <div class="jumbotron text-center">
-        <h1>Marcar aula</h1>
+        <h1>Schedule class</h1>
         </div>
         <center>
         <div>
-            <h2>Selecione o aluno:</h2>
+            <h2>Select student: </h2>
             <input id="idaluno" name="Aluno" type="text" list="listaalunos">
                 <datalist id="listaalunos">
                     <select name="estiloaluno" id="estiloaluno">

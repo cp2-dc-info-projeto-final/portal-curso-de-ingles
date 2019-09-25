@@ -13,22 +13,18 @@
 
 <div class="jumbotron text-center">
   <h1>Página do Aluno</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  
 </div>
   
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
       <a href="calendario.php"><img src="ola.png"></a>
-      <p>Nessa página é possível ver suas aulas</p>
-    </div>
-    <div class="col-sm-4">
-    <a href="biblioteca.php"><img src="ola.png"></a>
-      <p>Nessa página é possível ver as palavras que você aprendeu até agora</p>
+      <p>On this page you can see your classes</p>
     </div>
     <div class="col-sm-4">
     <a href="fazerQuestoesView.php"><img src="ola.png"></a>        
-      <p>Nesa página você pode fazer exercícios</p>
+      <p>This page you can do exercises</p>
     </div>
   </div>
 </div>

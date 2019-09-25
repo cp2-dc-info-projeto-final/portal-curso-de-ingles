@@ -1,10 +1,10 @@
 <html>
     <head>
-        <title>Visualização de alunos</title>
+        <title>Users display</title>
         <meta charset="UTF-8">
     </head>
 <body>
-<h2> Estes são os alunos registrados: </h2>
+<h2> These are the registered users: </h2>
 
 <?php
    require_once('verAlunosCtrl.php');
