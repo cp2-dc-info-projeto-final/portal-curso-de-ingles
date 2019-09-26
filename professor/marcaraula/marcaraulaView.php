@@ -10,105 +10,30 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="jumbotron text-center">
-        <h1>Schedule class</h1>
-        </div>
-        <center>
-        <div>
-            <h2>Select student: </h2>
+        <div class='jumbotron text-center'><h1>Schedule class</h1></div>
+        <div class='container'>
+            <center><h2>Select the student:</h2>
             <input id="idaluno" name="Aluno" type="text" list="listaalunos">
                 <datalist id="listaalunos">
                     <select name="estiloaluno" id="estiloaluno">
-                        <option value="Aluno 1">
-                            <?php
-                                require_once('marcaraulaCtrl.php');
+                        <?php 
 
-                                $alunos = exibiraluno();
-
-                                foreach ($alunos as $usuario) {
-                                    echo "<h3>" . $aluno['nome'] . "</h3>";
-                                }
-                            ?>
-                        </option>
-                        <option value="Aluno 2">
-                            <?php
-                                require_once('marcaraulaCtrl.php');
-
-                                $alunos = exibiralunos();
-
-                                foreach ($alunos as $aluno) {
-                                    echo "<h3>" . $aluno['nome'] . "</h3>";
-                                }
-                            ?>
-                        </option>
-                        <option value="Aluno 3">
-                            <?php
-                                require_once('marcaraulaCtrl.php');
-
-                                $alunos = exibiralunos();
-
-                                foreach ($alunos as $aluno) {
-                                    echo "<h3>" . $aluno['nome'] . "</h3>";
-                                }
-                            ?>
-                        </option>
-                        <option value="Aluno 4">
-                            <?php
-                                require_once('marcaraulaCtrl.php');
-
-                                $alunos = exibiralunos();
-
-                                foreach ($alunos as $aluno) {
-                                    echo "<h3>" . $aluno['nome'] . "</h3>";
-                                }
-                            ?>
-                        </option>
-                        <option value="ALuno 5">
-                            <?php
-                                require_once('marcaraulaCtrl.php');
-
-                                $alunos = exibiralunos();
-
-                                foreach ($alunos as $aluno) {
-                                    echo "<h3>" . $aluno['nome'] . "</h3>";
-                                }
-                            ?>
-                        </option>
-                        <option value="Aluno 6">
-                            <?php
-                                require_once('marcaraulaCtrl.php');
-
-                                $alunos = exibiralunos();
-
-                                foreach ($alunos as $aluno) {
-                                    echo "<h3>" . $aluno['nome'] . "</h3>";
-                                }
-                            ?>
-                        </option>
-                        <option value="Aluno 7">
-                            <?php
-                                require_once('marcaraulaCtrl.php');
-
-                                $alunos = exibiralunos();
-
-                                foreach ($alunos as $aluno) {
-                                    echo "<h3>" . $aluno['nome'] . "</h3>";
-                                }
-                            ?>
-                        </option>
-                        <option value="Aluno 8">
-                            <?php
-                                require_once('marcaraulaCtrl.php');
-
-                                $alunos = exibiralunos();
-
-                                foreach ($alunos as $aluno) {
-                                    echo "<h3>" . $aluno['nome'] . "</h3>";
-                                }
-                            ?>
-                        </option>
+                        require_once('../visualizacao/verAlunosCtrl.php');
+                        $alunos = exibirAlunos();
+                        
+                        foreach ($alunos as $aluno) {
+                            if($aluno['tipo'] != 2){
+                        echo'<option value="Aluno '. $aluno['id'] .'">
+                            ' . $aluno['nome'] . '
+                        </option>'; 
+                            }
+                        }
+                        
+                        ?>
+                        
                     </select>
-                </datalist>    
-        </div></center>
+                </datalist>   
+                    </center> 
+        </div>
     </body>
 </html>
