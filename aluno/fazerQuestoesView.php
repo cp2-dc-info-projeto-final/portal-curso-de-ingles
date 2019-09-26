@@ -1,11 +1,18 @@
 <html>
     <head>
-        <title>Fazer questões</title>
-        <meta charset="UTF-8">
-    </head>
+        <title>Awser Questions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="../ico.ico" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
 <body>
-
-<form action="fazerQuestoesCtrl.php" class="needs-validation" novalidate method="post">
+<div class='jumbotron text-center'><h2> Awser Questions: </h2><br>
+<a href="../professorView.php"><input type='button' value='Back'></a></div>
+<div class="container">
+<form action="submitQuestoesCtrl.php" class="needs-validation" novalidate method="post">
 
 <?php
    require_once('fazerQuestoesCtrl.php');

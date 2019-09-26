@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Log In</title>
-  <link rel="shortcut icon" href="ico.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="../ico.ico" type="image/x-icon" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -19,7 +19,7 @@
 </div>
 
 <div class="container">
-  <p>Try to submit this form before filling out the input fields, to see the effect.</p>
+  <p>Fill out the input fields</p>
   <form action="loginCtrl.php" class="needs-validation" novalidate method="post">
     <div class="form-group">
       <label for="email">Email:</label>
