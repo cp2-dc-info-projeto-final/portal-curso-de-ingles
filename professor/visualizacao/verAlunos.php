@@ -23,7 +23,7 @@ function buscarAlunos() {
                 $aluno['id'] = $row['id'];
                 $aluno['nome'] = $row['nome'];
                 $aluno['email'] = $row['email'];
-                $aluno['tipo'] = $row['tipo'];
+            
                 
                 array_push($alunos, $aluno);
             }
