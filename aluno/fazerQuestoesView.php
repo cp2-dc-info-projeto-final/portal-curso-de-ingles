@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class='jumbotron text-center'><h2> Awser Questions: </h2><br>
-<a href="../professorView.php"><input type='button' value='Back'></a></div>
+<a href="alunoView.php"><input type='button' value='Back'></a></div>
 <div class="container">
 <form action="submitQuestoesCtrl.php" class="needs-validation" novalidate method="post">
 
