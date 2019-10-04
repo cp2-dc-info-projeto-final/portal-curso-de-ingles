@@ -4,6 +4,7 @@
 
     $email = $_POST["email"];
     $senha = $_POST["senha"];
+    $tipo = $_POST["tipo"];
         
     session_start();
 
@@ -18,6 +19,7 @@
     if (autentica($email, $senha) == true) {
         session_unset();
         $_SESSION["nome"] = $row["nome"]; 
+        $_SESSION["tipo"] = $row["tipo"]; 
         header("Location: ../aluno/alunoView.php"); 
         
         

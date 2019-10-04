@@ -2,22 +2,17 @@
     
     require "submit.php";
 
-    //$nome = $_POST["nome"]; aqui terá o check do radiobutton
-
-
-    session_start();
+    //$resposta = $_POST["respota"]; aqui terá o check do radiobutton
 
     $erro = "";
 
-    //verificação se respondeu if () {
+    /*if () {
         session_unset();
-        header("Location: ../autenticacao/loginView.php");
         exit();
     } else {
         $erro = "Answer all questions";        
         $_SESSION["erro"] = $erro;
-        header("Location: cadastroView.php");
         exit();
-    }
+    }*/
 
 ?>
