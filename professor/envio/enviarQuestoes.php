@@ -1,6 +1,6 @@
 <?php
     
-    function enviarQuestao($enunciado, $opA, $opB, $opC, $opD, $gabarito) {
+    function enviarQuestao($enunciado, $opA, $opB, $opC, $opD, $gabarito, $TIPO) {
 
         $connection = mysqli_connect("localhost", "root", "", "portalcursodeingles");
  
@@ -19,7 +19,7 @@
             return false;
         }
 
-        $sql = "INSERT INTO questao (enunciado, opA, opB, opC, opD, gabarito) VALUES('$enunciado', '$opA', '$opB', '$opC', '$opD', '$gabarito')";
+        $sql = "INSERT INTO questao (enunciado, opA, opB, opC, opD, gabarito, TIPO) VALUES('$enunciado', '$opA', '$opB', '$opC', '$opD', '$gabarito', '$TIPO')";
 
         if(mysqli_query($connection, $sql)){
             return true;
