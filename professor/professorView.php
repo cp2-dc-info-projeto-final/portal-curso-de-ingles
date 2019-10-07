@@ -11,12 +11,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+<?php
+   require_once('professorCtrl.php');
+?>
 
 <div class="jumbotron text-center">
 <form action="sairCtrl.php" class="needs-validation" novalidate method="post">
 <input type='submit' value='Log out'>
 </form>
-  <h1>Teacher Page</h1>
+  <h1>Teacher Page</h1><?php echo"Welcome ". $_SESSION['nome'];?>
 
 </div>
   

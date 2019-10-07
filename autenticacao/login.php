@@ -21,21 +21,22 @@
                 if (password_verify($senha, $hash)) {
                     $sql = "SELECT tipo FROM usuario WHERE email='$email'";
                     $result = mysqli_query($connection, $sql);
-                    if (mysqli_num_rows($result) > 0) {
-                    $tipo = $row["tipo"]
+                        if (mysqli_num_rows($result) > 0) {
+                            $tipo = $row["tipo"];
 
-                    mysqli_close($connection);
-                    return true;
-                } else {
+                            mysqli_close($connection);
+                            return true;
+                        } else {
                     mysqli_close($connection);
                     return false;
                 }
             }
-        } else {
-            mysqli_close($connection);
-            return false;
+            if (password_verify($senha, $hash) == false) {
+                mysqli_close($connection);
+                return false;
+            }    
         }
-
-        
+        }
+            
     }   
 ?>

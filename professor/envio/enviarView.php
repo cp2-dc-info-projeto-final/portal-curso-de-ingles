@@ -40,7 +40,7 @@
         <input type="number" min="1" max="4" name="gabarito" id="gabarito">
     </p>
     <p>
-        <label for="TIPO">Feedback</label>
+        <label for="TIPO">Level</label>
         <input type="number" min="1" max="3" name="TIPO" id="TIPO">
     </p>
 
