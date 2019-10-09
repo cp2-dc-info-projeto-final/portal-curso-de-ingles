@@ -12,14 +12,17 @@
 </head>
 <body>
 <?php
-   require_once('professorCtrl.php');
+   require_once('../descobrirtipo/descobrirCtrl.php');
 ?>
 
 <div class="jumbotron text-center">
 <form action="sairCtrl.php" class="needs-validation" novalidate method="post">
 <input type='submit' value='Log out'>
 </form>
-  <h1>Teacher Page</h1><?php echo"Welcome ". $_SESSION['nome']"";?>
+  <h1>Teacher Page</h1>
+  <?php 
+  echo "Welcome" . $_SESSION['nome'];
+  ?>
 
 </div>
   
