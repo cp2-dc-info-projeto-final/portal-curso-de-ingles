@@ -24,7 +24,7 @@
         echo "<ol type='A'>";
         
         echo "<li>" . $questao['opA'] . "</li>";
-        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='A' checked /> A";
+        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='A'/> A";
         echo "<li>" . $questao['opB'] . "</li>";
         echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='B'/> B";
         echo "<li>" . $questao['opC'] . "</li>";

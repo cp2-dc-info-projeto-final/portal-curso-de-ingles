@@ -17,7 +17,7 @@
         header("Location: enviarView.php");
         exit();
     }
-    if (($gabarito != 1)&&($gabarito != 2)&&($gabarito != 3)&&($gabarito != 4)&&){
+    if (($gabarito != 1)&&($gabarito != 2)&&($gabarito != 3)&&($gabarito != 4)){
         $erro = "Feedback wrong, choice 1, 2, 3 or 4 ";        
         $_SESSION["erro"] = $erro;
         header("Location: enviarView.php");

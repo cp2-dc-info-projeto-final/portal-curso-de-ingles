@@ -2,7 +2,9 @@
     
     require "submit.php";
 
-    //$resposta = $_POST["respota"]; aqui terá o check do radiobutton
+    foreach($_POST as $key => $value) {
+        echo "$key = $value";
+      }
 
     $erro = "";
 
