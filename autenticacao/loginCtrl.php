@@ -4,8 +4,10 @@
 
     $email = $_POST["email"];
     $senha = $_POST["senha"];
-        
+
     session_start();
+
+    $_SESSION["email"] = $email;
 
     if (empty($senha)) {
         $erro = "Password cannot be empty";
@@ -13,11 +15,18 @@
         header("Location: loginView.php");
         exit();
     }
-
+    $tipo = $_SESSION["tipo"];
 
     if (autentica($email, $senha) == true) {
-        session_unset();     
-        header("Location: ../aluno/alunoView.php"); 
+        session_unset();
+        $_SESSION["email"] = $email;
+        $_SESSION["tipo"] = $tipo;
+        //if($tipo == '1'){
+        //header("Location: ../aluno/alunoView.php");
+            //}
+        //if($tipo == '2'){
+            header("Location: ../professor/professorView.php");
+           // }
         exit();
     }
     else {

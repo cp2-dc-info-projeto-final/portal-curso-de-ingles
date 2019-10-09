@@ -1,7 +1,8 @@
 <?php
 
     function autentica($email, $senha) {
-        
+        //$_SESSION["email"] = $email;
+        //$_SESSION["tipo"] = $tipo;
         $connection = mysqli_connect("localhost", "root", "", "portalcursodeingles");
  
         // Check connection
@@ -17,8 +18,7 @@
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
                 $hash = $row["senha"];
-                $_SESSION["tipo"] = $row["tipo"];
-                $_SESSION["email"] = $email;
+                //$_SESSION["tipo"] = $row["tipo"];
                 if (password_verify($senha, $hash) == true) {
                     mysqli_close($connection);
                     return true;
