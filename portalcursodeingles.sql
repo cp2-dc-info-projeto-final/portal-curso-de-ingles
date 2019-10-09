@@ -60,7 +60,7 @@ CREATE TABLE `questao` (
   `opC` varchar(120) COLLATE utf8_bin NOT NULL,
   `opD` varchar(120) COLLATE utf8_bin NOT NULL,
   `gabarito` int(11) NOT NULL,
-  `TIPO` int(1) DEFAULT NULL
+  `tipo` int(1) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------

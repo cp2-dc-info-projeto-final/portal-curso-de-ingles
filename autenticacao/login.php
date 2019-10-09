@@ -9,6 +9,7 @@
             die("Erro de conecção com o MYSQL" . mysqli_connect_error());
         }
         //TENTATIVA
+        /*
         session_start();
         $sql = "SELECT tipo FROM usuario WHERE email='$email'";
 
@@ -24,11 +25,11 @@
         } else{
             die("Erro ao buscar questões com a consulta $sql. " . mysqli_error($connection));
         }
-
+        */
         //------------------------
 
 
-        $sql = "SELECT senha FROM usuario WHERE email='$email'";
+        $sql = "SELECT senha, tipo FROM usuario WHERE email='$email'";
     
         $result = mysqli_query($connection, $sql);
 
@@ -36,13 +37,14 @@
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
                 $hash = $row["senha"];
+                $tipo = $row["tipo"];
                 
                 if (password_verify($senha, $hash) == true) {
                     mysqli_close($connection);
-                    return true;
+                    return $tipo;
                 }   else{
                     mysqli_close($connection);
-                    return false;
+                    return null;
                 }
             } 
         }

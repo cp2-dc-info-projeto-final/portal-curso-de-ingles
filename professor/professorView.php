@@ -12,7 +12,7 @@
 </head>
 <body>
 <?php
-   require_once('../descobrirtipo/descobrirCtrl.php');
+   //require_once('../descobrirtipo/descobrirCtrl.php');
 ?>
 
 <div class="jumbotron text-center">

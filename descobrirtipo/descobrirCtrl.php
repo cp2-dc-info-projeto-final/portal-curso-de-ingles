@@ -5,7 +5,7 @@
     session_start();
 
     if (descobre() == true) {
-
+        //echo "teste";
         exit();
     }
     else {

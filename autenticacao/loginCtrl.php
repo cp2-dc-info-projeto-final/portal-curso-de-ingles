@@ -9,8 +9,6 @@
 
     $_SESSION["email"] = $email;
 
-    $tipo = $_SESSION["tipo"];
-
     if (empty($senha)) {
         $erro = "Password cannot be empty";
         $_SESSION["erro"] = $erro;
@@ -18,17 +16,17 @@
         exit();
     }
 
-
-    if (autentica($email, $senha) == true) {
+    $tipo = autentica($email, $senha);
+    if (isset($tipo)) {
         session_unset();
         $_SESSION["email"] = $email;
         $_SESSION["tipo"] = $tipo;
-        //if($tipo == '1'){
-        //header("Location: ../aluno/alunoView.php");
-            //}
-        //if($tipo == '2'){
+        if($tipo == '1'){
+            header("Location: ../aluno/alunoView.php");
+        }
+        if($tipo == '2'){
             header("Location: ../professor/professorView.php");
-           // }
+        }
         exit();
     }
     else {
