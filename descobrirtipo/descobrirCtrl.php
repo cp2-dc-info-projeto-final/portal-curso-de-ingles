@@ -1,13 +1,11 @@
 <?php
 
-    require "descobrir.php";
+    require_once('descobrir.php');
 
-    $tipo = $_POST["tipo"];
-        
     session_start();
 
     if (descobre() == true) {
-        session_unset();     
+
         exit();
     }
     else {
@@ -16,4 +14,5 @@
         header("Location: ../autenticacao/loginView.php");
         exit();
     }    
+
 ?>

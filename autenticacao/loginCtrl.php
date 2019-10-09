@@ -9,13 +9,15 @@
 
     $_SESSION["email"] = $email;
 
+    $tipo = $_SESSION["tipo"];
+
     if (empty($senha)) {
         $erro = "Password cannot be empty";
         $_SESSION["erro"] = $erro;
         header("Location: loginView.php");
         exit();
     }
-    $tipo = $_SESSION["tipo"];
+
 
     if (autentica($email, $senha) == true) {
         session_unset();
