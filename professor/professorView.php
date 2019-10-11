@@ -12,7 +12,7 @@
 </head>
 <body>
 <?php
-   //require_once('../descobrirtipo/descobrirCtrl.php');
+   require_once('descobrirCtrl.php');
 ?>
 
 <div class="jumbotron text-center">
@@ -20,10 +20,6 @@
 <input type='submit' value='Log out'>
 </form>
   <h1>Teacher Page</h1>
-  <?php 
-  require_once('../descobrirtipo/descobrirSessaoCtrl.php');
-  ?>
-
 </div>
   
 <div class="container">

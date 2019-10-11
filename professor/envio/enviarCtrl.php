@@ -37,7 +37,6 @@
     $erro = "";
 
     if (enviarQuestao($enunciado, $opA, $opB, $opC, $opD, $gabarito, $TIPO) == true) {
-        session_unset();
         header("Location: enviarView.php");
         exit();
     } else {

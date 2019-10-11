@@ -4,8 +4,9 @@
 
     session_start();
 
-    if (descobre() == true) {
-        //echo "teste";
+    if (descobre() == "2") {
+        echo ("teste " . $_SESSION['tipo']);
+        header("Location: ../professor/professorView.php");
         exit();
     }
     else {
