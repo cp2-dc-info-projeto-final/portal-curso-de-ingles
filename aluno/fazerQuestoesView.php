@@ -27,13 +27,13 @@
         echo "<ol type='A'>";
         
         echo "<li>" . $questao['opA'] . "</li>";
-        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='A'/> A";
+        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='1'/> A";
         echo "<li>" . $questao['opB'] . "</li>";
-        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='B'/> B";
+        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='2'/> B";
         echo "<li>" . $questao['opC'] . "</li>";
-        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='C'/> C";
+        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='3'/> C";
         echo "<li>" . $questao['opD'] . "</li>";
-        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='D'/> D";
+        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='4'/> D";
         
         echo "</ol>";
     }

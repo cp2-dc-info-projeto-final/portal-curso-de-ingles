@@ -4,6 +4,9 @@
 
     foreach($_POST as $key => $value) {
         echo "$key = $value ";
+        //if($key == $gabarito){
+           //adicionar no total pra puxar porcentagem dps 
+        //}
       }
 
     $erro = "";

@@ -52,7 +52,7 @@
     <input type="submit" value="submit">
 
     <?php
-        session_start();
+        //session_start();
         if(array_key_exists('erro', $_SESSION) == true){
             $erro = $_SESSION["erro"];
             echo "<br><b>$erro</b>";

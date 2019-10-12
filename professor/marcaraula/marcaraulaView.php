@@ -25,11 +25,11 @@
                         $alunos = exibirAlunos();
                         
                         foreach ($alunos as $aluno) {
-                            if($aluno['tipo'] != 2){
+                        
                         echo'<option value="Aluno '. $aluno['id'] .'">
                             ' . $aluno['nome'] . '
                         </option>'; 
-                            }
+                        
                         }
                         
                         ?>
