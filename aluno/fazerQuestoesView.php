@@ -9,6 +9,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+<?php
+   require_once('descobrirCtrl.php');
+?>
 <div class='jumbotron text-center'><h2> Awser Questions: </h2><br>
 <a href="alunoView.php"><input type='button' value='Back'></a></div>
 <div class="container">

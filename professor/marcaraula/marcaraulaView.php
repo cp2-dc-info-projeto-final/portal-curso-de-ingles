@@ -10,6 +10,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
     <body>
+    <?php
+   require_once('../dbCtrl.php');
+    ?>
         <div class='jumbotron text-center'><h1>Schedule class</h1></div>
         <div class='container'>
             <center><h2>Select the student:</h2>

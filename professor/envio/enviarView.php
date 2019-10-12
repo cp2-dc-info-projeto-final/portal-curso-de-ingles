@@ -11,6 +11,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+<?php
+   require_once('../dbCtrl.php');
+?>
 <div class='jumbotron text-center'><h2> Create Questions: </h2><br>
 <a href="../professorView.php"><input type='button' value='Back'></a></div>
 <div class="container">

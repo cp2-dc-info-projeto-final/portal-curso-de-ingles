@@ -7,7 +7,8 @@
         }else{
             $erro = "You are not a student, you can't see this. ";
             $_SESSION["erro"] = $erro;
-            return null;
+            $tipo = $_SESSION["tipo"];
+            return $tipo;
         }
         
     }   
