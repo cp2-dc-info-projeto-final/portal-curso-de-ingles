@@ -13,13 +13,12 @@
   <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
   <script>
 $(function() {
-    $( "#calendario" ).datepicker({
-        showOn: "button",
-        buttonImage: "calendario.png",
-        buttonImageOnly: true
+    $("#calendario").datepicker({
+        changeMonth: true,
+        changeYear: true
     });
 });
-</script>  
+</script>
     </head>
     <body>
     <?php
