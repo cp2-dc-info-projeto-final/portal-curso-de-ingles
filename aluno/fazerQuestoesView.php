@@ -11,11 +11,13 @@
 <body>
 <?php
    require_once('descobrirCtrl.php');
+   $nivelaluno = nivelaluno();
+   //echo"$nivelaluno";
 ?>
 <div class='jumbotron text-center'><h2> Awser Questions: </h2><br>
 <a href="alunoView.php"><input type='button' value='Back'></a></div>
 <div class="container">
-<form action="submitCtrl.php" class="needs-validation" novalidate method="post">
+<form action="fazerQuestoesView.php" class="needs-validation" novalidate method="post">
 
 <?php
    require_once('fazerQuestoesCtrl.php');
@@ -23,20 +25,61 @@
     $questoes = exibirQuestoes();
 
     foreach ($questoes as $questao) {
+        //IF PARA SABER SE A QUESTAO CONDIZ COM O NIVEL
+        if(($questao['tipo'] == '1') && ($nivelaluno == '1') || ($questao['tipo'] == '2') && ($nivelaluno == '3') || ($questao['tipo'] == '3') && ($nivelaluno == '4')){
         echo "<h3>" . $questao['enunciado'] . "</h3>";
         echo "<ol type='A'>";
         
-        echo "<li>" . $questao['opA'] . "</li>";
-        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='1'/> A";
-        echo "<li>" . $questao['opB'] . "</li>";
-        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='2'/> B";
-        echo "<li>" . $questao['opC'] . "</li>";
-        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='3'/> C";
-        echo "<li>" . $questao['opD'] . "</li>";
-        echo "<input type='radio' name='q_" . $questao['idquestao'] . "' value='4'/> D";
+        if (isset($_POST[$questao['idquestao']])) {
+            echo "<li>" . $questao['opA'] . "</li>";
+            if ($questao['gabarito'] == 1) {
+                echo "<input type='radio' name='" . $questao['idquestao'] . "' value='1' checked /> <b>A</b>";
+            } else {
+                echo "<input type='radio' name='" . $questao['idquestao'] . "' value='1'/> A";
+            }
+            
+            echo "<li>" . $questao['opB'] . "</li>";
+            if ($questao['gabarito'] == 2) {
+                echo "<input type='radio' name='" . $questao['idquestao'] . "' value='2' checked /> <b>B</b>";
+            } else {
+                echo "<input type='radio' name='" . $questao['idquestao'] . "' value='2'/> B";
+            }
+            echo "<li>" . $questao['opC'] . "</li>";
+            if ($questao['gabarito'] == 3) {
+                echo "<input type='radio' name='" . $questao['idquestao'] . "' value='3' checked /> <b>C</b>";
+            } else {
+                echo "<input type='radio' name='" . $questao['idquestao'] . "' value='3'/> C";
+            }
+            echo "<li>" . $questao['opD'] . "</li>";
+            if ($questao['gabarito'] == 4) {
+                echo "<input type='radio' name='" . $questao['idquestao'] . "' value='4' checked /> <b>D</b>";
+            } else {
+                echo "<input type='radio' name='" . $questao['idquestao'] . "' value='4'/> D";
+            }
+            echo "<br>";
+
+            if ($_POST[$questao['idquestao']] == $questao['gabarito']) {
+                echo "Acertou";
+            } else {
+                echo "tururu...";
+            }
+        } else {
+            echo "<li>" . $questao['opA'] . "</li>";
+            echo "<input type='radio' name='" . $questao['idquestao'] . "' value='1'/> A";
+            echo "<li>" . $questao['opB'] . "</li>";
+            echo "<input type='radio' name='" . $questao['idquestao'] . "' value='2'/> B";
+            echo "<li>" . $questao['opC'] . "</li>";
+            echo "<input type='radio' name='" . $questao['idquestao'] . "' value='3'/> C";
+            echo "<li>" . $questao['opD'] . "</li>";
+            echo "<input type='radio' name='" . $questao['idquestao'] . "' value='4'/> D";
+        }
+        
         
         echo "</ol>";
+        //FIM DO IF DE NIVEL 
+        }
     }
+    
 ?>
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>

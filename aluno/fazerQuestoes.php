@@ -9,7 +9,7 @@ function buscarQuestoes() {
         die("Mano acho q n ta rolando aqui o  mysql :v" . mysqli_connect_error());
     }
 
-    $sql = "SELECT idquestao, enunciado, opA, opB, opC, opD FROM questao";
+    $sql = "SELECT idquestao, enunciado, opA, opB, opC, opD, tipo, gabarito FROM questao ORDER BY idquestao";
 
     $result = mysqli_query($connection, $sql);
 
@@ -26,6 +26,8 @@ function buscarQuestoes() {
                 $questao['opB'] = $row['opB'];
                 $questao['opC'] = $row['opC'];
                 $questao['opD'] = $row['opD'];
+                $questao['tipo'] = $row['tipo'];
+                $questao['gabarito'] = $row['gabarito'];
 
                 array_push($questoes, $questao);
             }
