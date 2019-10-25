@@ -16,5 +16,9 @@
         header("Location: ../autenticacao/loginView.php");
         exit();
     }   
+    function nivelaluno() {
+        $nivelaluno = $_SESSION["tipo"];
+        return $nivelaluno;
+    }
 
 ?>
