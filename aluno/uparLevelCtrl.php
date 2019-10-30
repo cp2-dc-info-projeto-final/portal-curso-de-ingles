@@ -1,6 +1,6 @@
 <?php
 
-    require "uparLevel.php"
+    require "uparLevel.php";
 
     function upar() {
         $tipoOld = $_SESSION["tipo"];
@@ -10,12 +10,12 @@
             echo "You are the best ";
 
         }else{
-            uparLevel($tipoOld, $email);
+            uparLevel($email);
 
         }
 
 
-
+        return null;
     }
     
 ?>
