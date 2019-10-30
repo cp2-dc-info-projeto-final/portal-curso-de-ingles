@@ -19,7 +19,7 @@
             return false;
         }
 
-        $sql = "INSERT INTO questao (enunciado, opA, opB, opC, opD, gabarito, TIPO) VALUES('$enunciado', '$opA', '$opB', '$opC', '$opD', '$gabarito', '$tipo')";
+        $sql = "INSERT INTO questao (enunciado, opA, opB, opC, opD, gabarito, tipo) VALUES('$enunciado', '$opA', '$opB', '$opC', '$opD', '$gabarito', '$tipo')";
 
         if(mysqli_query($connection, $sql)){
             return true;

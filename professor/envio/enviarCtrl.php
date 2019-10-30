@@ -8,7 +8,7 @@
     $opC = $_POST["opC"];
     $opD = $_POST["opD"];
     $gabarito = $_POST["gabarito"];
-    $tipo = $_POST["TIPO"];
+    $tipo = $_POST["tipo"];
     session_start();
 
     if ((empty($enunciado)) || (empty($opA)) || (empty($opB)) || (empty($opC)) || (empty($opD)) || (empty($gabarito)) || (empty($tipo))) {

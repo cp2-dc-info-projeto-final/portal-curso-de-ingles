@@ -18,7 +18,7 @@
         if (mysqli_num_rows($result) > 0) {
             return false;
         }
-        
+        $novoTipo = 0;
         if($result == 1){
             $novoTipo = 3;
         }
@@ -30,7 +30,7 @@
             die("Wrong type, you are not a student");
         }
 
-        $sql = "UPDATE usuario SET tipo = $novoTipo WHERE email='$email'";
+        $sql = "UPDATE usuario SET tipo = '$novoTipo' WHERE email='$email'";
 
         if(mysqli_query($connection, $sql)){
             return true;
