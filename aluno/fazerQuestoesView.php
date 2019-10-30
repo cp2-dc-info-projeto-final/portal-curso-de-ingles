@@ -20,6 +20,8 @@
 <form action="fazerQuestoesView.php" class="needs-validation" novalidate method="post">
 
 <?php
+$contadorDeAcertos = 0;
+$numDeQuestoes = 0;
    require_once('fazerQuestoesCtrl.php');
 
     $questoes = exibirQuestoes();
@@ -27,6 +29,7 @@
     foreach ($questoes as $questao) {
         //IF PARA SABER SE A QUESTAO CONDIZ COM O NIVEL
         if(($questao['tipo'] == '1') && ($nivelaluno == '1') || ($questao['tipo'] == '2') && ($nivelaluno == '3') || ($questao['tipo'] == '3') && ($nivelaluno == '4')){
+        $numDeQuestoes++;
         echo "<h3>" . $questao['enunciado'] . "</h3>";
         echo "<ol type='A'>";
         
@@ -60,9 +63,13 @@
 
             if ($_POST[$questao['idquestao']] == $questao['gabarito']) {
                 echo "Acertou";
+                $contadorDeAcertos++;
+                //echo "$contadorDeAcertos";
             } else {
-                echo "tururu...";
+                echo "Errou";
+                //echo "$contadorDeAcertos";
             }
+
         } else {
             echo "<li>" . $questao['opA'] . "</li>";
             echo "<input type='radio' name='" . $questao['idquestao'] . "' value='1'/> A";
@@ -78,6 +85,11 @@
         echo "</ol>";
         //FIM DO IF DE NIVEL 
         }
+    }
+    if (($contadorDeAcertos == $numDeQuestoes) ){
+        echo "level up";
+        require_once('uparLevelCtrl.php');
+        upar();
     }
     
 ?>

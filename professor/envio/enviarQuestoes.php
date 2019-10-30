@@ -1,12 +1,12 @@
 <?php
     
-    function enviarQuestao($enunciado, $opA, $opB, $opC, $opD, $gabarito, $TIPO) {
+    function enviarQuestao($enunciado, $opA, $opB, $opC, $opD, $gabarito, $tipo) {
 
         $connection = mysqli_connect("localhost", "root", "", "portalcursodeingles");
  
         // Check connection
         if($connection === false){
-            die("Mano acho q n ta rolando aqui o  mysql :v" . mysqli_connect_error());
+            die("erro no mysql" . mysqli_connect_error());
         }
 
         $sql = "SELECT id FROM questao WHERE enunciado='$enunciado'";
@@ -19,12 +19,12 @@
             return false;
         }
 
-        $sql = "INSERT INTO questao (enunciado, opA, opB, opC, opD, gabarito, TIPO) VALUES('$enunciado', '$opA', '$opB', '$opC', '$opD', '$gabarito', '$TIPO')";
+        $sql = "INSERT INTO questao (enunciado, opA, opB, opC, opD, gabarito, TIPO) VALUES('$enunciado', '$opA', '$opB', '$opC', '$opD', '$gabarito', '$tipo')";
 
         if(mysqli_query($connection, $sql)){
             return true;
         } else{
-            die("deu um erro fudido ao tentar enviar a questao, tenta de novo sla $sql. " . mysqli_error($connection));
+            die("erro no mysql $sql. " . mysqli_error($connection));
         }
 
         mysqli_close($connection);

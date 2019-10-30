@@ -32,7 +32,7 @@ function buscarQuestoes() {
             }
         }
     } else{
-        die("Erro ao buscar questões com a consulta $sql. " . mysqli_error($connection));
+        die("erro no mysql $sql. " . mysqli_error($connection));
     }  
 
     mysqli_close($connection);

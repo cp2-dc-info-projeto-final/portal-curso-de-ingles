@@ -6,7 +6,7 @@ function buscarAlunos() {
 
     // Check connection
     if($connection === false) {
-        die("Mano acho q n ta rolando aqui o  mysql :v" . mysqli_connect_error());
+        die("erro no mysql" . mysqli_connect_error());
     }
 
     $sql = "SELECT id, nome, email FROM usuario";
@@ -29,7 +29,7 @@ function buscarAlunos() {
             }
         }
     } else{
-        die("Erro ao buscar questões com a consulta $sql. " . mysqli_error($connection));
+        die("erro no mysql $sql. " . mysqli_error($connection));
     }  
 
     mysqli_close($connection);

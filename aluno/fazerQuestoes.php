@@ -6,7 +6,7 @@ function buscarQuestoes() {
 
     // Check connection
     if($connection === false) {
-        die("Mano acho q n ta rolando aqui o  mysql :v" . mysqli_connect_error());
+        die("Erro no mysql " . mysqli_connect_error());
     }
 
     $sql = "SELECT idquestao, enunciado, opA, opB, opC, opD, tipo, gabarito FROM questao ORDER BY idquestao";

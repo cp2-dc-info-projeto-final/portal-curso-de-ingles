@@ -8,10 +8,10 @@
     $opC = $_POST["opC"];
     $opD = $_POST["opD"];
     $gabarito = $_POST["gabarito"];
-    $TIPO = $_POST["TIPO"];
+    $tipo = $_POST["TIPO"];
     session_start();
 
-    if ((empty($enunciado)) || (empty($opA)) || (empty($opB)) || (empty($opC)) || (empty($opD)) || (empty($gabarito)) || (empty($TIPO))) {
+    if ((empty($enunciado)) || (empty($opA)) || (empty($opB)) || (empty($opC)) || (empty($opD)) || (empty($gabarito)) || (empty($tipo))) {
         $erro = "Complementary data missing";        
         $_SESSION["erro"] = $erro;
         header("Location: enviarView.php");
@@ -24,7 +24,7 @@
         exit();
 
     }
-    if (($TIPO != 1)&&($TIPO != 2)&&($TIPO != 3)){
+    if (($tipo != 1)&&($tipo != 2)&&($tipo != 3)){
         $erro = "Type wrong, choice 1, 2 or 3 ";        
         $_SESSION["erro"] = $erro;
         header("Location: enviarView.php");
@@ -36,7 +36,7 @@
 
     $erro = "";
 
-    if (enviarQuestao($enunciado, $opA, $opB, $opC, $opD, $gabarito, $TIPO) == true) {
+    if (enviarQuestao($enunciado, $opA, $opB, $opC, $opD, $gabarito, $tipo) == true) {
         header("Location: enviarView.php");
         exit();
     } else {
