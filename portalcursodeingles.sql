@@ -165,5 +165,21 @@ VALUES (1, '1. I _____ Brazilian and I live in Curitiba. ', 'is', 'are', 'am','y
  (6, '2. In the question “What fish did you see?” We can state that', 'a) The correct would be "what fish you saw?"', 'b) There is no grammatical error;', 'c) This is incorrect because the auxiliary verb did should be at the beginning of the question.', 'd) A possible answer would be “I saw two fishes”.', '2', 2),
 (7, '3. Which sentence below is seen as correct against the grammatical dictates of the English language?', 'a) I did a research.', 'b) I bought one clothe.', 'c) I bought two equipment.', 'd) I would rather you went tomorrow.', '4', 2),
 (8, '7. Which sentence below contains the same function still present in the phrase "My brother is 100% right and still 100% wrong"?', 'a) It is yet to come.', 'b) Are we there yet?', 'c) The Zika virus doesn’t yet pose a threat to people in the United States.', 'd) I am trying to keep drugs out of my life, and yet I’m forced to take them every day.', '4', 2);
+(9, '4. Which alternative below presents a controversial sentence due to its construction?', 'a) I like reading books.', 'b) I’ve been meaning to tell you something.', 'c) That’s a song I’ve never heard of.', 'd) I’m off to bed.', '3', 2),
+(10, '1. Which of the options below “were there” or “there were” contain the same function as “were there any kids in there?”', 'a) Jack and Bob were there too.', 'b) They were excited we were there.', 'c) Boy, were there lots of snakes back then.', 'd) There were no chairs at all.', '4', 2);
 
+'
+
+
+
+'
+
+,')
+'
+
+'
+
+'
+
+')
 
