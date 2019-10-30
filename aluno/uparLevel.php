@@ -1,6 +1,6 @@
 <?php
     
-    function uparLevel($tipoOld, $email) {
+    function uparLevel($email) {
 
         $connection = mysqli_connect("localhost", "root", "", "portalcursodeingles");
  
@@ -18,13 +18,14 @@
         if (mysqli_num_rows($result) > 0) {
             return false;
         }
-        if($tipoOld == 1){
+        
+        if($result == 1){
             $novoTipo = 3;
         }
-        if($tipoOld == 3){
+        if($$result == 3){
             $novoTipo = 4;
         }
-        if($tipoOld == 2){
+        if($$result == 2){
             $novoTipo = 2;
             die("Wrong type, you are not a student");
         }
