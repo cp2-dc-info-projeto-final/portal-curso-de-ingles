@@ -24,6 +24,9 @@
         if($tipo == '1'){
             header("Location: ../aluno/alunoView.php");
         }
+        if(($tipo != '1') || ($tipo != '2')){
+            header("Location: ../aluno/alunoView.php");
+        }
         if($tipo == '2'){
             header("Location: ../professor/professorView.php");
         }

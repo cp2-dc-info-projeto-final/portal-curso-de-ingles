@@ -62,11 +62,11 @@ $numDeQuestoes = 0;
             echo "<br>";
 
             if ($_POST[$questao['idquestao']] == $questao['gabarito']) {
-                echo "Acertou";
+                echo "Correct Awser";
                 $contadorDeAcertos++;
                 //echo "$contadorDeAcertos";
             } else {
-                echo "Errou";
+                echo "Wrong Awser";
                 //echo "$contadorDeAcertos";
             }
 
@@ -87,7 +87,7 @@ $numDeQuestoes = 0;
         }
     }
     if (($contadorDeAcertos == $numDeQuestoes) ){
-        echo "level up";
+        //echo "level up";
         require_once('uparLevelCtrl.php');
         upar();
     }

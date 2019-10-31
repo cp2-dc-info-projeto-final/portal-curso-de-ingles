@@ -14,19 +14,22 @@
         $result = mysqli_query($connection, $sql);
 
         $erro = "";
+        //die("resulado da query $result. " );
         
-        if (mysqli_num_rows($result) > 0) {
+        if (mysqli_num_rows($result) > 1) {
             return false;
         }
-        $novoTipo = '0';
-        if($result == '1'){
-            $novoTipo = '3';
+        $row = mysqli_fetch_assoc($result);
+        $qry = $row['tipo'];
+        $novoTipo = 0;
+        if($qry == 1){
+            $novoTipo = 3;
         }
-        if($$result == '3'){
-            $novoTipo = '4';
+        if($qry == 3){
+            $novoTipo = 4;
         }
-        if($$result == '2'){
-            $novoTipo = '2';
+        if($qry == 2){
+            $novoTipo = 2;
             die("Wrong type, you are not a student");
         }
 
