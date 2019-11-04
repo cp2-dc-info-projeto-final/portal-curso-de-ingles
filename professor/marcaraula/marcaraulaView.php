@@ -14,8 +14,7 @@
   <script>
 $(function() {
     $("#calendario").datepicker({
-        changeMonth: true,
-        changeYear: true
+        altFormat: "yy-mm-dd"
     });
 });
 </script>
@@ -33,7 +32,9 @@ $(function() {
 
     ?>
 
-        <div class='jumbotron text-center'><h1>Schedule class</h1></div>
+        <div class='jumbotron text-center'><h1>Schedule class</h1>
+        <a href="../professorView.php"><input type='button' value='Back'></a></div>
+        
         <div class='container'>
             <center><h2>Select the student:</h2>
             <form action="mcCtrl.php" method="post">
@@ -46,7 +47,7 @@ $(function() {
 
                             foreach ($alunos as $aluno) {
 
-                            echo'<option value="Aluno '. $aluno['id'] .'">
+                            echo'<option value="' .$aluno['id'].'">
                                 ' . $aluno['nome'] . '
                             </option>'; 
 
@@ -55,16 +56,17 @@ $(function() {
                         ?>
                 </datalist>
                 <h2>Select the date:</h2>
-                <input type="text" id="calendario" />
+                <input type="text" id="calendario" name="calendario"/>
                 <br>
                 <br>
                 <input type="submit" name="submit" />
             </form>
             </center>
-        <?php 
-        echo"$exibido";
-
-        ?>
+                            <?php
+                            if (isset($_POST[$aluno['id']])) {
+                                echo "";
+                            }
+                            ?>
 
         </div>
     </body>

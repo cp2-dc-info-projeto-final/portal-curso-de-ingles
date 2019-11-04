@@ -27,7 +27,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <a href="calendario.php"><img src="ola.png"></a>
+      <a href="calendarioView.php"><img src="ola.png"></a>
       <p>Your Classes</p>
     </div>
     <div class="col-sm-4">

@@ -40,6 +40,12 @@
     <a href="marcaraula/marcaraulaView.php"><img src="ola.png"></a>        
       <p>Schedule class</p>
     </div>
+
+<?php    if(array_key_exists('erro', $_SESSION) == true){
+            $erro = $_SESSION["erro"];
+            echo "<br><b>$erro</b>";
+        } ?>
+
   </div>
 </div>
 
