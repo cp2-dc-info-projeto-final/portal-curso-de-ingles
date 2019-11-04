@@ -32,7 +32,8 @@ CREATE TABLE `aula` (
   `idaula` int(11) NOT NULL,
   `data_aula` date DEFAULT NULL,
   `aluno` int(11) DEFAULT NULL,
-  `professor` varchar(50) COLLATE utf8_bin DEFAULT NULL
+  `professor` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `hora` varchar(5)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------

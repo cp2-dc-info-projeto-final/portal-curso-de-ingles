@@ -23,9 +23,8 @@
 
     foreach ($aulas as $aula) {
         echo "<h3>" . $aula['data_aula'] . "</h3>";
-        echo "<ol type='1'>";
-        //echo "<li>" . $aula['hora'] . "</li>";
-        echo "</ol>";
+        echo "<p>" . $aula['hora'] . "</p>";
+        echo "<br>";
         
     }
 ?>

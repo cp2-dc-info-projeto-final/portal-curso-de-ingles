@@ -1,6 +1,6 @@
 <?php
     
-    function cadastraAula($iddoaluno,$calendario) {
+    function cadastraAula($iddoaluno,$calendario,$hora) {
 
         $connection = mysqli_connect("localhost", "root", "", "portalcursodeingles");
  
@@ -19,7 +19,7 @@
             return false;
         }
 
-        $sql = "INSERT INTO aula (data_aula,aluno,professor) VALUES('$calendario', '$iddoaluno', '1')";
+        $sql = "INSERT INTO aula (data_aula,aluno,professor,hora) VALUES('$calendario', '$iddoaluno', '1','$hora')";
 
         if(mysqli_query($connection, $sql)){
             return true;

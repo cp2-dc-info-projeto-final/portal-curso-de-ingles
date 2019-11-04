@@ -21,10 +21,7 @@ $( document ).ready(function() {
     $("#calendario").datepicker({ 
         format: 'yyyy-mm-dd'
     });
-    $("#calendario").on("change", function () {
-        var fromdate = $(this).val();
-        alert(fromdate);
-    });
+    
 }); 
 </script>
     </head>
@@ -56,8 +53,10 @@ $( document ).ready(function() {
 
                         ?>
                 </datalist>
-                <h2>Select the date:</h2>
+                <h2>Select the date: </h2>
                 <input type="text" id="calendario" name="calendario"/>
+                <h2>Choose a time for your meeting: </h2>
+                <input type="time" id="hora" name="hora" required>
                 <br>
                 <br>
                 <input type="submit" name="submit" />

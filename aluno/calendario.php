@@ -1,6 +1,6 @@
 <?php
 
-function buscarAlunos() {
+function buscadorDeAulas() {
 
     $connection = mysqli_connect("localhost", "root", "", "portalcursodeingles");
 
@@ -9,7 +9,7 @@ function buscarAlunos() {
         die("erro no mysql" . mysqli_connect_error());
     }
 
-    $sql = "SELECT data_aula FROM usuario";
+    $sql = "SELECT data_aula, hora FROM aula";
 
     $result = mysqli_query($connection, $sql);
 
@@ -21,6 +21,8 @@ function buscarAlunos() {
             $aula = [];
             while ($row = mysqli_fetch_assoc($result)) {
                 $aula['data_aula'] = $row['data_aula'];
+                $aula['hora'] = $row['hora'];
+
                 array_push($aulas, $aula);
             }
         }
@@ -29,7 +31,7 @@ function buscarAlunos() {
     }  
 
     mysqli_close($connection);
-    return $aula;
+    return $aulas;
 }
 
 ?>
