@@ -18,15 +18,30 @@
 <div class="container">
 <?php
    require_once('calendarioCtrl.php');
-
+   require_once('verAlunosCtrl.php');
+    $alunos = exibirAlunos();
     $aulas = exibirAulas();
+    foreach ($aulas as $aula) {
+        foreach ($alunos as $aluno) {
+            if($aluno['id'] == $aula['aluno']){
+                if(($aluno['email']) == ($_SESSION['email'])){
+                    $idAb = $aluno['id'];
+                }
+            }
+        }
+    }
+    //echo ($_SESSION['email']);
+
 
     foreach ($aulas as $aula) {
+        if($aula['aluno'] == $idAb){
         echo "<h3>" . $aula['data_aula'] . "</h3>";
         echo "<p>" . $aula['hora'] . "</p>";
         echo "<br>";
-        
+        }
     }
+
+
 ?>
 </div>
 </body>
