@@ -167,3 +167,7 @@ VALUES (1, '1. I _____ Brazilian and I live in Curitiba. ', 'is', 'are', 'am','y
 (8, '7. Which sentence below contains the same function still present in the phrase "My brother is 100% right and still 100% wrong"?', 'a) It is yet to come.', 'b) Are we there yet?', 'c) The Zika virus doesn’t yet pose a threat to people in the United States.', 'd) I am trying to keep drugs out of my life, and yet I’m forced to take them every day.', '4', 2),
 (9, '4. Which alternative below presents a controversial sentence due to its construction?', 'a) I like reading books.', 'b) I’ve been meaning to tell you something.', 'c) That’s a song I’ve never heard of.', 'd) I’m off to bed.', '3', 2),
 (10, '1. Which of the options below “were there” or “there were” contain the same function as “were there any kids in there?”', 'a) Jack and Bob were there too.', 'b) They were excited we were there.', 'c) Boy, were there lots of snakes back then.', 'd) There were no chairs at all.', '4', 2);
+
+INSERT INTO usuario (nome, email, senha, dataNasc, tipo) VALUES
+('professor', 'professor@gmail.com', '$2y$10$LLmVjPdW57Qe.TCXmoHXVe64PJW0cZCAQ1dej0faItcg.ykruVW1a', '0001-01-01', 2),
+('Aluno Exemplo', 'aluno1@gmail.com', '$2y$10$LLmVjPdW57Qe.TCXmoHXVe64PJW0cZCAQ1dej0faItcg.ykruVW1a', '0001-01-01', 1);

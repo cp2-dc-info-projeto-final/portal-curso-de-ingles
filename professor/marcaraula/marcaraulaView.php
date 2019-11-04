@@ -11,25 +11,26 @@
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
   <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
   <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
-  <script>
-$(function() {
-    $("#calendario").datepicker({
-        altFormat: "yy-mm-dd"
+  <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker3.min.css">
+<script>
+$( document ).ready(function() {
+    $("#calendario").datepicker({ 
+        format: 'yyyy-mm-dd'
     });
-});
+    $("#calendario").on("change", function () {
+        var fromdate = $(this).val();
+        alert(fromdate);
+    });
+}); 
 </script>
     </head>
     <body>
     <?php
    require_once('../dbCtrl.php');
-    ?>
-    <?php
-
-    if(isset($_POST['submit'])) {
-        $aluno = $_POST['listaalunos'];
-        echo $country;
-    }
-
     ?>
 
         <div class='jumbotron text-center'><h1>Schedule class</h1>
