@@ -153,7 +153,7 @@ ALTER TABLE `usuario`
 VALUES (1, '1. I _____ Brazilian and I live in Curitiba. ', 'is', 'are', 'am','your','3', 1),
  (2, '2. _____ you talking to me?', 'is', 'are', 'it', 'am', '2', 1),
  (3, '3. What _____ Sheila doing?', 'am', 'are', 'is','your', '3', 1),
- (4, '4. My dog _____ playing in the garden.)', 'is', 'are', 'am', 'it', '1', 1),
+ (4, '4. My dog _____ playing in the garden.', 'is', 'are', 'am', 'it', '1', 1),
 (5, '5. The doors _____ closed.', 'is', 'it', 'am', 'are', '4', 1),
  (6, '2. In the question “What fish did you see?” We can state that', 'a) The correct would be "what fish you saw?"', 'b) There is no grammatical error;', 'c) This is incorrect because the auxiliary verb did should be at the beginning of the question.', 'd) A possible answer would be “I saw two fishes”.', '2', 2),
 (7, '3. Which sentence below is seen as correct against the grammatical dictates of the English language?', 'a) I did a research.', 'b) I bought one clothe.', 'c) I bought two equipment.', 'd) I would rather you went tomorrow.', '4', 2),
