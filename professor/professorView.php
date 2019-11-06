@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>Teacher Page</title>
+  <link rel="shortcut icon" href="../ico.ico" type="image/x-icon" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../ico.ico" type="image/x-icon" />
@@ -26,19 +27,19 @@
   
 <div class="container">
   <div class="row">
-    <div class="col-sm-4">
+    <div>
       <a href="visualizacao/verQuestoesView.php"><img src="viewquestions.png"></a>
      
     </div>
-    <div class="col-sm-4">
+    <div >
     <a href="envio/enviarView.php"><img src="createquestions.png"></a>
-     
+     <br>
     </div>
-    <div class="col-sm-4">
+    <div >
     <a href="visualizacao/verAlunosView.php"><img src="viewusers.png"></a>        
      
     </div>
-    <div class="col-sm-4">
+    <div >
     <a href="marcaraula/marcaraulaView.php"><img src="scheduleclass.png"></a>        
 
     </div>
