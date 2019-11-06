@@ -155,12 +155,12 @@ VALUES (1, '1. I _____ Brazilian and I live in Curitiba. ', 'is', 'are', 'am','y
  (3, '3. What _____ Sheila doing?', 'am', 'are', 'is','your', '3', 1),
  (4, '4. My dog _____ playing in the garden.', 'is', 'are', 'am', 'it', '1', 1),
 (5, '5. The doors _____ closed.', 'is', 'it', 'am', 'are', '4', 1),
- (6, '2. In the question “What fish did you see?” We can state that', 'a) The correct would be "what fish you saw?"', 'b) There is no grammatical error;', 'c) This is incorrect because the auxiliary verb did should be at the beginning of the question.', 'd) A possible answer would be “I saw two fishes”.', '2', 2),
-(7, '3. Which sentence below is seen as correct against the grammatical dictates of the English language?', 'a) I did a research.', 'b) I bought one clothe.', 'c) I bought two equipment.', 'd) I would rather you went tomorrow.', '4', 2),
-(8, '7. Which sentence below contains the same function still present in the phrase "My brother is 100% right and still 100% wrong"?', 'a) It is yet to come.', 'b) Are we there yet?', 'c) The Zika virus doesn’t yet pose a threat to people in the United States.', 'd) I am trying to keep drugs out of my life, and yet I’m forced to take them every day.', '4', 2),
+ (6, '1. In the question “What fish did you see?” We can state that', 'a) The correct would be "what fish you saw?"', 'b) There is no grammatical error;', 'c) This is incorrect because the auxiliary verb did should be at the beginning of the question.', 'd) A possible answer would be “I saw two fishes”.', '2', 2),
+(7, '2. Which sentence below is seen as correct against the grammatical dictates of the English language?', 'a) I did a research.', 'b) I bought one clothe.', 'c) I bought two equipment.', 'd) I would rather you went tomorrow.', '4', 2),
+(8, '3. Which sentence below contains the same function still present in the phrase "My brother is 100% right and still 100% wrong"?', 'a) It is yet to come.', 'b) Are we there yet?', 'c) The Zika virus doesn’t yet pose a threat to people in the United States.', 'd) I am trying to keep drugs out of my life, and yet I’m forced to take them every day.', '4', 2),
 (9, '4. Which alternative below presents a controversial sentence due to its construction?', 'a) I like reading books.', 'b) I’ve been meaning to tell you something.', 'c) That’s a song I’ve never heard of.', 'd) I’m off to bed.', '3', 2),
-(10, '1. Which of the options below “were there” or “there were” contain the same function as “were there any kids in there?”', 'a) Jack and Bob were there too.', 'b) They were excited we were there.', 'c) Boy, were there lots of snakes back then.', 'd) There were no chairs at all.', '4', 2);
-
+(10, '5. Which of the options below “were there” or “there were” contain the same function as “were there any kids in there?”', 'a) Jack and Bob were there too.', 'b) They were excited we were there.', 'c) Boy, were there lots of snakes back then.', 'd) There were no chairs at all.', '4', 2),
+ (11, '1. Qual das opções abaixo “were there” ou “there were” contém a mesma função que em “were there any kids in there?” ', 'a) Jack and Bob were there too.', '','c) Boy, were there lots of snakes back then.', 'd) There were no chairs at all.''4', 3);
 INSERT INTO usuario (nome, email, senha, dataNasc, tipo) VALUES
 ('professor', 'professor@gmail.com', '$2y$10$LLmVjPdW57Qe.TCXmoHXVe64PJW0cZCAQ1dej0faItcg.ykruVW1a', '0001-01-01', 2),
 ('Aluno Exemplo', 'aluno1@gmail.com', '$2y$10$LLmVjPdW57Qe.TCXmoHXVe64PJW0cZCAQ1dej0faItcg.ykruVW1a', '0001-01-01', 1);
