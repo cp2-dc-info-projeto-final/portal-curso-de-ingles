@@ -19,7 +19,7 @@
             return false;
         }
 
-        $sql = "INSERT INTO aula (data_aula,aluno,professor,hora) VALUES('$calendario', '$iddoaluno', '1','$hora')";
+        $sql = "INSERT INTO aula (data_aula,aluno,hora) VALUES('$calendario', '$iddoaluno', '$hora')";
 
         if(mysqli_query($connection, $sql)){
             return true;

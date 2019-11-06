@@ -1,0 +1,9 @@
+.jumbotron-with-background {
+    background-image: url(../home/loli.svg);
+    background-position: center;
+    background-size: cover;
+}
+.push-spaces
+{
+    height: 250px;
+}

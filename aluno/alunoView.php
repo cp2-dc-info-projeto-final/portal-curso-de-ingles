@@ -26,13 +26,13 @@
   
 <div class="container">
   <div class="row">
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
     <div class="col-sm-4">
-      <a href="calendarioView.php"><img src="ola.png"></a>
-      <p>Your Classes</p>
+      <a href="calendario.php"><img src="yourclasses.png"></a>
     </div>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
     <div class="col-sm-4">
-    <a href="fazerQuestoesView.php"><img src="ola.png"></a>        
-      <p>Exercises</p>
+    <a href="fazerQuestoesView.php"><img src="exercises.png"></a>        
     </div>
   </div>
 </div>

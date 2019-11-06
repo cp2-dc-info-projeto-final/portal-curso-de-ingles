@@ -10,7 +10,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+
+<body style="background-color:#0f3860;">
+
 <?php
    require_once('descobrirCtrl.php');
 ?>
@@ -25,27 +27,21 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <a href="visualizacao/verQuestoesView.php"><img src="ola.png"></a>
-      <p>View questions with feedback</p>
+      <a href="visualizacao/verQuestoesView.php"><img src="viewquestions.png"></a>
+     
     </div>
     <div class="col-sm-4">
-    <a href="envio/enviarView.php"><img src="ola.png"></a>
-      <p>Create questions</p>
+    <a href="envio/enviarView.php"><img src="createquestions.png"></a>
+     
     </div>
     <div class="col-sm-4">
-    <a href="visualizacao/verAlunosView.php"><img src="ola.png"></a>        
-      <p>View users</p>
+    <a href="visualizacao/verAlunosView.php"><img src="viewusers.png"></a>        
+     
     </div>
     <div class="col-sm-4">
-    <a href="marcaraula/marcaraulaView.php"><img src="ola.png"></a>        
-      <p>Schedule class</p>
-    </div>
+    <a href="marcaraula/marcaraulaView.php"><img src="scheduleclass.png"></a>        
 
-<?php    if(array_key_exists('erro', $_SESSION) == true){
-            $erro = $_SESSION["erro"];
-            echo "<br><b>$erro</b>";
-        } ?>
-
+    </div>
   </div>
 </div>
 

@@ -23,17 +23,29 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
+--
+-- Estrutura da tabela `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `nome` varchar(150) COLLATE utf8_bin NOT NULL,
+  `email` varchar(100) COLLATE utf8_bin NOT NULL,
+  `senha` varchar(60) COLLATE utf8_bin NOT NULL,
+  `datanasc` date NOT NULL,
+  `id` int(6) NOT NULL,
+  `tipo` int(1) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Estrutura da tabela `aula`
 --
 
 CREATE TABLE `aula` (
-  `idaula` int(11) NOT NULL,
+  `idaula` int(11) NOT NULL PRIMARY KEY,
   `data_aula` date DEFAULT NULL,
-  `aluno` int(11) DEFAULT NULL,
-  `professor` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `hora` varchar(5)
+  `hora` varchar(5),
+  `aluno` integer,
+  CONSTRAINT `fk_AluAul` FOREIGN KEY (`aluno`) REFERENCES `usuario`(`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
@@ -77,30 +89,10 @@ CREATE TABLE `questao_exercicio` (
 
 -- --------------------------------------------------------
 
---
--- Estrutura da tabela `usuario`
---
-
-CREATE TABLE `usuario` (
-  `nome` varchar(150) COLLATE utf8_bin NOT NULL,
-  `email` varchar(100) COLLATE utf8_bin NOT NULL,
-  `senha` varchar(60) COLLATE utf8_bin NOT NULL,
-  `datanasc` date NOT NULL,
-  `id` int(6) NOT NULL,
-  `tipo` int(1) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `aula`
---
-ALTER TABLE `aula`
-  ADD PRIMARY KEY (`idaula`),
-  ADD KEY `aluno` (`aluno`),
-  ADD KEY `professor` (`professor`);
 
 --
 -- Indexes for table `exercicio`
