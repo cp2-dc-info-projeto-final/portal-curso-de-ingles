@@ -170,8 +170,8 @@ VALUES (1, '1. I _____ Brazilian and I live in Curitiba. ', 'is', 'are', 'am','y
 (18, '8. Qual o sentido da composição fancy myself na frase “I fancied myself living in a place like this”?', 'a) me vi','b) me permiti','c) me policiei','d) me dei o direito', '1', 3),
 (19, '9. Complete a frase: “this car _________fourteen thousand dollars”. ','a) affords','b) goes for','c) coasted','d) value', '2', 3),
 (20, '10. O que significa drive home na frase “The newspapers drive home the fact that violence is part of urban life“?', 'a) dar o recado','b) dirigir para casa', 'c) revelar', 'd) abordar', 1, 3),
-(21, "1 – I wouldn’t’ve looked so long for the misplaced book had I known it was in your backpack all along!", "a) There are no errors in being pointed out.", "(b) The contraction would not be inadmissible.", "c) A contração wouldn’t’ve é inadmissível bem como had I known. Deve-se rescrever I had known.", "d) A contração wouldn’t’ve é inadmissível bem como had I known. Deve-se rescrever If I had known.", '1', 3);
-
+(21, "11. I wouldn’t’ve looked so long for the misplaced book had I known it was in your backpack all along!", "a) There are no errors in being pointed out.", "(b) The contraction would not be inadmissible.", "c) A contração wouldn’t’ve é inadmissível bem como had I known. Deve-se rescrever I had known.", "d) A contração wouldn’t’ve é inadmissível bem como had I known. Deve-se rescrever If I had known.", '1', 3);
+(22, "12. Jack: Could you give me a hand with this? Bob: Sure, I’ll help you do the dishes.", "a) The verb that comes after the help must be in the infinitive.", "b) The verb after help should include the sequence of letters 'ing'.", "c) There are no errors to be pointed out.", "d) O demonstrativo adequado para o contexto em questão é that e não this.", '3', 3);
 INSERT INTO usuario (nome, email, senha, dataNasc, tipo) VALUES
 ('professor', 'professor@gmail.com', '$2y$10$LLmVjPdW57Qe.TCXmoHXVe64PJW0cZCAQ1dej0faItcg.ykruVW1a', '0001-01-01', 2),
 ('Aluno Exemplo', 'aluno1@gmail.com', '$2y$10$LLmVjPdW57Qe.TCXmoHXVe64PJW0cZCAQ1dej0faItcg.ykruVW1a', '0001-01-01', 1);
