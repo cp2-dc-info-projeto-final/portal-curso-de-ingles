@@ -167,9 +167,10 @@ VALUES (1, '1. I _____ Brazilian and I live in Curitiba. ', 'is', 'are', 'am','y
 (15, '5.  Complete a frase ” I can’t help____________”', 'a) eat chocolate;','b) eating chocolate;','c) for eating chocolate;','d) eaten chocolate','2', 3),
 (16, '6. “Can’t get enough of it” indica:','a) Falta de paciência;','b) Predileção;','c) Cansaço;','d) Tristeza;','2', 3),
 (17, '7. Qual frase abaixo contém a mesma função de yet presente na frase “My brother is 100% right and yet 100% wrong”?','a) It is yet to come.','b) Are we there yet?','c) The Zika virus doesn’t yet pose a threat to people in the United States.','d) I am trying to keep drugs out of my life, and yet I’m forced to take them every day.','4', 3),
-(18. '8. Qual o sentido da composição fancy myself na frase “I fancied myself living in a place like this”?', 'a) me vi','b) me permiti','c) me policiei','d) me dei o direito', '1', 3),
-(19. '9. Complete a frase: “this car _________fourteen thousand dollars”. ','a) affords','b) goes for','c) coasted','d) value', '2', 3),
-(20. '10. O que significa drive home na frase “The newspapers drive home the fact that violence is part of urban life“?', 'a) dar o recado','b) dirigir para casa', 'c) revelar', 'd) abordar', 1, 3);
+(18, '8. Qual o sentido da composição fancy myself na frase “I fancied myself living in a place like this”?', 'a) me vi','b) me permiti','c) me policiei','d) me dei o direito', '1', 3),
+(19, '9. Complete a frase: “this car _________fourteen thousand dollars”. ','a) affords','b) goes for','c) coasted','d) value', '2', 3),
+(20, '10. O que significa drive home na frase “The newspapers drive home the fact that violence is part of urban life“?', 'a) dar o recado','b) dirigir para casa', 'c) revelar', 'd) abordar', 1, 3),
+(21, "1 – I wouldn’t’ve looked so long for the misplaced book had I known it was in your backpack all along!", "a) There are no errors in being pointed out.", "(b) The contraction would not be inadmissible.", "c) A contração wouldn’t’ve é inadmissível bem como had I known. Deve-se rescrever I had known.", "d) A contração wouldn’t’ve é inadmissível bem como had I known. Deve-se rescrever If I had known.", '1', 3);
 
 INSERT INTO usuario (nome, email, senha, dataNasc, tipo) VALUES
 ('professor', 'professor@gmail.com', '$2y$10$LLmVjPdW57Qe.TCXmoHXVe64PJW0cZCAQ1dej0faItcg.ykruVW1a', '0001-01-01', 2),

@@ -10,14 +10,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="background-color:#0f3860;">
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1>Sign in</h1>      
   </div>
 </div>
-
+<font color="white">
 <div class="container">
   <p>Fill out the input fields</p>
   <form action="loginCtrl.php" class="needs-validation" novalidate method="post">
@@ -76,6 +76,6 @@
   }, false);
 })();
 </script>
-
+</font>
 </body>
 </html>
