@@ -17,14 +17,8 @@ Log in dos alunos.
 ### RF 03
 Exercícios fixos para todos os alunos.
 ### RF 04
-Exercícios quinzenais para os alunos do curso.
-### RF 05
 Calendário com as datas das aulas para os alunos do curso.
-### RF 06
-Biblioteca de palavras aprendidas.
-### RF 07
-As respostas dos alunos aos exercícios quinzenais devem ser enviadas ao professor.
-### RF 08
+### RF 05
 O gabarito dos exercícios fixos devem aparecer para o aluno ao final da atividade.
 
 ## Requisitos Não Funcionais
@@ -32,4 +26,4 @@ O gabarito dos exercícios fixos devem aparecer para o aluno ao final da ativida
 [#RNF 01](#rnf-01)
 
 ### RNF 01
-O aplicativo deve ser todo em inglês.
+O site deve ser todo em inglês.
