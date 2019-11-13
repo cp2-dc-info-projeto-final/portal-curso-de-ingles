@@ -8,15 +8,15 @@
 
 
 ### RF 01
-Cadastro de alunos novos, façam eles o curso ou não. 
+Cadastro de alunos novos.
 ### RF 02
 Log in dos alunos.
 ### RF 03
-Exercícios fixos para todos os alunos.
+Exercícios fixos.
 ### RF 04
-Calendário com as datas das aulas para os alunos do curso.
+Calendário com as datas das aulas.
 ### RF 05
-O gabarito dos exercícios fixos devem aparecer para o aluno ao final da atividade.
+O gabarito dos exercícios fixos deve aparecer para o aluno ao final da atividade.
 
 ## Requisitos Não Funcionais
 
