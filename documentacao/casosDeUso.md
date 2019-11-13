@@ -69,7 +69,7 @@
 1. O usuário clica em exercises.
 2. O sistema redireciona o usuário para a página dos exercícios.
 3. O usuário responde as questões.
-4. O sistema mostra o gabarito e o número de acertos.
+4. O sistema mostra o gabarito.
 
 **Fluxo alternativo:**
 1. O usuário deixa uma resposta vazia.
