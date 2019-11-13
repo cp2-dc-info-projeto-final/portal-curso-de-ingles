@@ -25,13 +25,15 @@ $( document ).ready(function() {
 }); 
 </script>
     </head>
-    <body>
+    <body style="background-color:#0f3860;">
     <?php
    require_once('../dbCtrl.php');
     ?>
 
         <div class='jumbotron text-center'><h1>Schedule class</h1>
-        <a href="../professorView.php"><input type='button' value='Back'></a></div>
+        <a href="../professorView.php"><button class="btn btn-primary" type='button' value='Back'>Back</button></a></div>
+
+        <font color="white">
         
         <div class='container'>
             <center><h2>Select the student:</h2>
@@ -59,7 +61,7 @@ $( document ).ready(function() {
                 <input type="time" id="hora" name="hora" required>
                 <br>
                 <br>
-                <input type="submit" name="submit" />
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
             </center>
                             <?php
@@ -69,5 +71,6 @@ $( document ).ready(function() {
                             ?>
 
         </div>
+                        </font>
     </body>
 </html>

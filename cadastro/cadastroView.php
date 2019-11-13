@@ -4,17 +4,20 @@
   <title>Sign Up</title>
   <link rel="shortcut icon" href="../ico.ico" type="image/x-icon" />
   <meta charset="utf-8">
+  <link rel="stylesheet" href="../cadastro/cadastro.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="background-color:#0f3860;">
 
-<div class="jumbotron text-center">
-  <h1>Sign up</h1>
+<font color="white">
 
+<div class="jumbotron jumbotron-fluid jumbotron-with-background" >
+      <div class="container push-spaces">
+</div>
 </div>
 
 
@@ -43,7 +46,7 @@
     </div>
 
     <div>
-        <input type="submit" value="Submit">
+    <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 
     <?php
@@ -59,5 +62,6 @@
     </p>
 </form>
 </div>
+    </font>
 </body>
 </html>

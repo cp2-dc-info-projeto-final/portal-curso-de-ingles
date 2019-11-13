@@ -4,6 +4,7 @@
   <title>Log In</title>
   <link rel="shortcut icon" href="../ico.ico" type="image/x-icon" />
   <meta charset="utf-8">
+  <link rel="stylesheet" href="../autenticacao/login.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -12,11 +13,11 @@
 </head>
 <body style="background-color:#0f3860;">
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1>Sign in</h1>      
-  </div>
+<div class="jumbotron jumbotron-fluid jumbotron-with-background" >
+      <div class="container push-spaces">
 </div>
+</div>
+
 <font color="white">
 <div class="container">
   <p>Fill out the input fields</p>

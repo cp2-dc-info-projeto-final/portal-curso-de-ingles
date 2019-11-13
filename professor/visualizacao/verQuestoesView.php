@@ -10,12 +10,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
-<body>
+    <body style="background-color:#0f3860;">
+    
 <?php
    require_once('../dbCtrl.php');
 ?>
 <div class='jumbotron text-center'><h2> These are the registered questions: </h2><br>
-<a href="../professorView.php"><input type='button' value='Back'></a></div>
+<a href="../professorView.php">
+
+<button class="btn btn-primary" type='button' value='Back'>Back</button>
+
+</a>
+
+</div>
+
+<font color="white">
 <div class="container">
 <?php
    require_once('verQuestoesCtrl.php');
@@ -49,5 +58,6 @@
     }
 ?>
 </div>
+</font>
 </body>
 </html>

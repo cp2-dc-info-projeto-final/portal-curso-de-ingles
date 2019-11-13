@@ -4,6 +4,7 @@
   <title>Teacher Page</title>
   <link rel="shortcut icon" href="../ico.ico" type="image/x-icon" />
   <meta charset="utf-8">
+  <link rel="stylesheet" href="../professor/professor.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="../ico.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -18,33 +19,46 @@
    require_once('descobrirCtrl.php');
 ?>
 
-<div class="jumbotron text-center">
-<form action="sairCtrl.php" class="needs-validation" novalidate method="post">
-<input type='submit' value='Log out'>
-</form>
-  <h1>Teacher Page</h1>
-</div>
-  
-<div class="container">
-  <div class="row">
-    <div>
-      <a href="visualizacao/verQuestoesView.php"><img src="viewquestions.png"></a>
-     
-    </div>
-    <div >
-    <a href="envio/enviarView.php"><img src="createquestions.png"></a>
-     <br>
-    </div>
-    <div >
-    <a href="visualizacao/verAlunosView.php"><img src="viewusers.png"></a>        
-     
-    </div>
-    <div >
-    <a href="marcaraula/marcaraulaView.php"><img src="scheduleclass.png"></a>        
+<div class="jumbotron jumbotron-fluid jumbotron-with-background" >
+<div class="container push-spaces">
 
-    </div>
-  </div>
+
+<form align="right" action="sairCtrl.php" class="needs-validation" novalidate method="post">
+<button type="submit" value='Log out' class="btn btn-primary">Sign out</button>
+</form>
+
+
 </div>
+</div>
+
+
+<div class="container">
+<div class="col-md-12 fundo" align="center"> 
+ 
+      <div>
+      <a href="visualizacao/verQuestoesView.php"><img src="viewquestions.png"></a>
+      </div>
+      <br>
+      <br>
+     <div>
+     <a href="envio/enviarView.php"><img src="createquestions.png"></a>
+     </div>
+     <br>
+     <br>   
+      <div>
+       <a href="visualizacao/verAlunosView.php"><img src="viewusers.png"></a>        
+       </div>
+       <br>
+       <br>
+     <div>
+     <a href="marcaraula/marcaraulaView.php"><img src="scheduleclass.png"></a>
+     </div>
+</div>
+</div>
+
+
+
+
 
 </body>
 </html>
