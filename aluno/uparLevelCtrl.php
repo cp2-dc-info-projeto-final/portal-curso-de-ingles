@@ -11,8 +11,11 @@
 
         }else{
             if (uparLevel($email) == true){
+                $tipoNovinho = $_SESSION["tipo"];
                 session_unset();
-                header("Location: ../autenticacao/loginView.php");
+                $_SESSION["tipo"]= $tipoNovinho;
+                $_SESSION["email"] = $email;
+                header("Location: alunoView.php");
                 exit();
             }
 

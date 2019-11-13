@@ -36,6 +36,7 @@
         $sql = "UPDATE usuario SET tipo='$novoTipo' WHERE email='$email'";
 
         if(mysqli_query($connection, $sql)){
+            $_SESSION["tipo"] = $novoTipo;
             return true;
         } else{
             die("erro ao alterar tipo $sql. " . mysqli_error($connection));

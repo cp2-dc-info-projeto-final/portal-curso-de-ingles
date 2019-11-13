@@ -22,8 +22,10 @@
 <form action="fazerQuestoesView.php" class="needs-validation" novalidate method="post">
 
 <?php
+$rodadas = 0;
 $contadorDeAcertos = 0;
 $numDeQuestoes = 0;
+
    require_once('fazerQuestoesCtrl.php');
 
     $questoes = exibirQuestoes();
@@ -36,6 +38,7 @@ $numDeQuestoes = 0;
         echo "<ol type='A'>";
         
         if (isset($_POST[$questao['idquestao']])) {
+            $rodadas ++;
             echo "<li>" . $questao['opA'] . "</li>";
             if ($questao['gabarito'] == 1) {
                 echo "<input type='radio' name='" . $questao['idquestao'] . "' value='1' checked /> <b>A</b>";
@@ -93,9 +96,14 @@ $numDeQuestoes = 0;
         require_once('uparLevelCtrl.php');
         upar();
     }
-    
+    //echo " rodadas: $rodadas";
+    if($rodadas<=0){
+        echo("<button type='submit'>Submit</button>");
+    }else{
+        echo("<a href='alunoView.php'><input type='button' value='Back To Student Page'></a></div>");
+    }
 ?>
-<button type="submit" class="btn btn-primary">Submit</button>
+
 </form>
 </body>
 </html>
