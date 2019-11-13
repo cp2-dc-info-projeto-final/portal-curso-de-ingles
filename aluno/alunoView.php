@@ -28,7 +28,7 @@
   <div class="row">
   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
     <div class="col-sm-4">
-      <a href="calendario.php"><img src="yourclasses.png"></a>
+      <a href="calendarioView.php"><img src="yourclasses.png"></a>
     </div>
     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
     <div class="col-sm-4">
