@@ -3,6 +3,7 @@
 function buscarQuestoes() {
 
     $connection = mysqli_connect("localhost", "root", "", "portalcursodeingles");
+    mysqli_set_charset($connection, 'utf8');
 
     // Check connection
     if($connection === false) {
