@@ -14,7 +14,7 @@
 <?php
    require_once('../dbCtrl.php');
 ?>
-<div class='jumbotron text-center'><h2> Create Questions: </h2><br>
+<div class='jumbotron text-center'><h1> Create Questions: </h1><br>
 <a href="../professorView.php"><button class="btn btn-primary" type='button' value='Back'>Back</button></a></div>
 
 <font color="white">

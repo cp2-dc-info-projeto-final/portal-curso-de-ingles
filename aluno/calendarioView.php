@@ -9,13 +9,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
-<body>
+    <body style="background-color:#0f3860;">
+ 
 <?php
    require_once('descobrirCtrl.php');
 ?>
-<div class='jumbotron text-center'><h2> These are your classes dates: </h2><br>
-<a href="alunoView.php"><input type='button' value='Back'></a></div>
+<div class='jumbotron text-center'><h1> These are your classes dates: </h1><br>
+<a href="alunoView.php"><button class="btn btn-primary" type='button' value='Back'>Back</button>
+</a></div>
 <div class="container">
+<font color="white">
 <?php
    require_once('calendarioCtrl.php');
    require_once('verAlunosCtrl.php');
@@ -44,5 +47,6 @@
 
 ?>
 </div>
+</font>
 </body>
 </html>

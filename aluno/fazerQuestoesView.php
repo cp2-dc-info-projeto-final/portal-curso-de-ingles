@@ -16,9 +16,11 @@
    $nivelaluno = nivelaluno();
    //echo"$nivelaluno";
 ?>
-<div class='jumbotron text-center'><h2> Awser Questions: </h2><br>
-<a href="alunoView.php"><input type='button' value='Back'></a></div>
+<div class='jumbotron text-center'><h1> Awser Questions: </h1><br>
+<a href="alunoView.php"><button class="btn btn-primary" type='button' value='Back'>Back</button></a></div>
+
 <div class="container">
+    <font color="white">
 <form action="fazerQuestoesView.php" class="needs-validation" novalidate method="post">
 
 <?php
@@ -98,12 +100,13 @@ $numDeQuestoes = 0;
     }
     //echo " rodadas: $rodadas";
     if($rodadas<=0){
-        echo("<button type='submit'>Submit</button>");
+        echo("<button class='btn btn-primary' type='submit'>Submit</button>");
     }else{
         echo("<a href='alunoView.php'><input type='button' value='Back To Student Page'></a></div>");
     }
 ?>
 
 </form>
+</font>
 </body>
 </html>

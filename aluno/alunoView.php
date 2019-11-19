@@ -17,10 +17,12 @@
    require_once('descobrirCtrl.php');
 ?>
 <div class="jumbotron text-center">
-<form action="sairCtrl.php" class="needs-validation" novalidate method="post">
-<input type='submit' value='Log out'>
+<h1>Student Page</h1>
+
+<form align="center" action="sairCtrl.php" class="needs-validation" novalidate method="post">
+<button type="submit" value='Log out' class="btn btn-primary">Sign out</button>
 </form>
-  <h1>Student Page</h1>
+  
   
 </div>
   

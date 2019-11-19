@@ -33,10 +33,9 @@ $( document ).ready(function() {
         <div class='jumbotron text-center'><h1>Schedule class</h1>
         <a href="../professorView.php"><button class="btn btn-primary" type='button' value='Back'>Back</button></a></div>
 
-        <font color="white">
         
         <div class='container'>
-            <center><h2>Select the student:</h2>
+            <center><font color="white"><h2>Select the student:</h2></font>
             <form action="mcCtrl.php" method="post">
                 <input id="idaluno" list="listaalunos" name="Aluno" type="text" />
                 <datalist id="listaalunos">
@@ -55,9 +54,9 @@ $( document ).ready(function() {
 
                         ?>
                 </datalist>
-                <h2>Select the date: </h2>
+                <font color="white"><h2>Select the date: </h2></font>
                 <input type="text" id="calendario" name="calendario"/>
-                <h2>Choose a time for your meeting: </h2>
+                <font color="white"><h2>Choose a time for your meeting: </h2></font>
                 <input type="time" id="hora" name="hora" required>
                 <br>
                 <br>
@@ -71,6 +70,5 @@ $( document ).ready(function() {
                             ?>
 
         </div>
-                        </font>
     </body>
 </html>

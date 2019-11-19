@@ -15,7 +15,7 @@
 <?php
    require_once('../dbCtrl.php');
 ?>
-<div class='jumbotron text-center'><h2> These are the registered questions: </h2><br>
+<div class='jumbotron text-center'><h1> These are the registered questions: </h1><br>
 <a href="../professorView.php">
 
 <button class="btn btn-primary" type='button' value='Back'>Back</button>
