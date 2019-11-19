@@ -185,9 +185,8 @@ VALUES (1, '1. I _____ Brazilian and I live in Curitiba. ', 'is', 'are', 'am','y
 (33, "14. Mark the option that complete correctly the sentences: 1 - The car, __________ was a taxi, exploded. 2 - Mrs Jack, __________ I like very much, is my teacher.  3-My brother, __________ phone you just heard, is a doctor.", "a) which,whom,whose.", "b) which, who, who.","c) that, who, who.","d) which, that, which.","e) that, who, which.", '1', 1),
 (34, "15. Mark the incorrect sentence.", "a)The person who phoned me last night is my teacher.", "b)The car which hit me was red.", "c)The student whose phone just rang should stand up.", "d)The police are looking for the car which driver was masked.", '4', 1),
 (35, "13. In which sentence does the word spirit have the same meaning as in (One drink is generally defined as a 12-ounce glass of beer, a 4- ounce glass of wine or 1.5 ounces of  spirits):", "a) They usually pray for their ancestors spirits.", "b) The children lifted my spirits with their laughter.", "c) More than any other politician, he embodied the spirit of the times.", "d) Brandy here is more expensive than spirits.", '4', 1),
+(36, "14. (Mackenzie SP) The corresponding synonym of the  word in between parenthesis (Illustrating decades of research with compelling and often bizarre examples of glitches) is: ", "a) aggressive", "b) complacent", "c) unreal", "d) defensible", '4', 3),
 
-
-e)The person that I phoned last night is my teacher.)
 INSERT INTO usuario (nome, email, senha, dataNasc, tipo) VALUES
 ('professor', 'professor@gmail.com', '$2y$10$LLmVjPdW57Qe.TCXmoHXVe64PJW0cZCAQ1dej0faItcg.ykruVW1a', '0001-01-01', 2),
 ('Aluno Exemplo', 'aluno1@gmail.com', '$2y$10$LLmVjPdW57Qe.TCXmoHXVe64PJW0cZCAQ1dej0faItcg.ykruVW1a', '0001-01-01', 1);
