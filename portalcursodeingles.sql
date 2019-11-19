@@ -184,7 +184,8 @@ VALUES (1, '1. I _____ Brazilian and I live in Curitiba. ', 'is', 'are', 'am','y
 (32, "13. That’s the fireman _________ son suffered an accident this afternoon.", "a) which" "b) who", "c) whose", "d) whom", "e) when)",  '3', 1),
 (33, "14. Mark the option that complete correctly the sentences: 1 - The car, __________ was a taxi, exploded. 2 - Mrs Jack, __________ I like very much, is my teacher.  3-My brother, __________ phone you just heard, is a doctor.", "a) which,whom,whose.", "b) which, who, who.","c) that, who, who.","d) which, that, which.","e) that, who, which.", '1', 1),
 (34, "15. Mark the incorrect sentence.", "a)The person who phoned me last night is my teacher.", "b)The car which hit me was red.", "c)The student whose phone just rang should stand up.", "d)The police are looking for the car which driver was masked.", '4', 1),
-(35, "")
+(35, "13. In which sentence does the word spirit have the same meaning as in (One drink is generally defined as a 12-ounce glass of beer, a 4- ounce glass of wine or 1.5 ounces of  spirits):", "a) They usually pray for their ancestors spirits.", "b) The children lifted my spirits with their laughter.", "c) More than any other politician, he embodied the spirit of the times.", "d) Brandy here is more expensive than spirits.", '4', 1),
+
 
 e)The person that I phoned last night is my teacher.)
 INSERT INTO usuario (nome, email, senha, dataNasc, tipo) VALUES
