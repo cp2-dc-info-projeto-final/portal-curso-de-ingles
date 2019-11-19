@@ -1,9 +1,9 @@
 <?php
 
-    require_once('marcaraula.php');
+    require_once('../visualizacao/verAlunos.php');
 
-    function exibirAluno() {
-        return buscarAluno();
+    function exibirAlunos() {
+        return buscarAlunos();
     }
     
 ?>

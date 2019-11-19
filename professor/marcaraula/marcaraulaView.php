@@ -41,7 +41,7 @@ $( document ).ready(function() {
                 <datalist id="listaalunos">
                         <?php 
 
-                            require_once('../visualizacao/verAlunosCtrl.php');
+                            require_once('marcarAulaCtrl.php');
                             $alunos = exibirAlunos();
 
                             foreach ($alunos as $aluno) {

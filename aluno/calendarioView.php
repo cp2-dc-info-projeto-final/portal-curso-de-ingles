@@ -20,13 +20,14 @@
 <div class="container">
 <font color="white">
 <?php
+   $idAb = null;
    require_once('calendarioCtrl.php');
    require_once('verAlunosCtrl.php');
     $alunos = exibirAlunos();
     $aulas = exibirAulas();
     foreach ($aulas as $aula) {
         foreach ($alunos as $aluno) {
-            if($aluno['id'] == $aula['aluno']){
+            if(is_null($idAb) && $aluno['id'] == $aula['aluno']){
                 if(($aluno['email']) == ($_SESSION['email'])){
                     $idAb = $aluno['id'];
                 }

@@ -9,7 +9,7 @@ function buscarAlunos() {
         die("erro no mysql" . mysqli_connect_error());
     }
 
-    $sql = "SELECT id, nome, email FROM usuario";
+    $sql = "SELECT id, nome, email FROM usuario WHERE tipo = 1";
 
     $result = mysqli_query($connection, $sql);
 
