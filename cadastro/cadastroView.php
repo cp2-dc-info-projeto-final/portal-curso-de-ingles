@@ -58,7 +58,7 @@
     ?>
     
     <p>
-        <a href="../autenticacao/LoginView.php">Login</a>
+        <a href="../autenticacao/LoginView.php">Sign in</a>
     </p>
 </form>
 </div>
