@@ -7,7 +7,7 @@
         $email=$_SESSION["email"];
         //echo "$tipoOld"; echo "$email";
         if($tipoOld>3){
-            echo "You are the best ";
+            echo"You are the best ";
 
         }else{
             if (uparLevel($email)==true){

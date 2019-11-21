@@ -1,7 +1,8 @@
 <html>
     <head>
         <title>Awser Questions</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" http-equiv=”Content-Type” content=”text/html; charset=iso-8859-1″>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="shortcut icon" href="../ico.ico" type="image/x-icon" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

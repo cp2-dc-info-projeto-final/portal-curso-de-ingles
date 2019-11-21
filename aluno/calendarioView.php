@@ -1,7 +1,6 @@
 <html>
     <head>
         <title>Users display</title>
-        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="shortcut icon" href="../../ico.ico" type="image/x-icon" />
