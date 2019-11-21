@@ -15,7 +15,7 @@
                 session_unset();
                 $_SESSION["tipo"]=$tipoNovinho;
                 $_SESSION["email"]=$email;
-                header("Location: alunoView.php");
+                //header("Location: alunoView.php");
                 exit();
             }
 

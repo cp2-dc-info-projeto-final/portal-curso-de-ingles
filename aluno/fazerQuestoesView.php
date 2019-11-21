@@ -96,8 +96,10 @@ $numDeQuestoes = 0;
     }
     if (($contadorDeAcertos == $numDeQuestoes) ){
         //echo "level up";
+        echo("<a href='alunoView.php'><input type='button' value='Back To Student Page'></a></div>");
         require_once('uparLevelCtrl.php');
         upar();
+        
     }
     //echo " rodadas: $rodadas";
     if($rodadas<=0){
