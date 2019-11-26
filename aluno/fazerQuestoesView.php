@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Awser Questions</title>
+        <title>Answer Questions</title>
         
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1" http-equiv=”Content-Type” content=”text/html; charset=iso-8859-1″> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -17,7 +17,7 @@
    $nivelaluno = nivelaluno();
    //echo"$nivelaluno";
 ?>
-<div class='jumbotron text-center'><h1> Awser Questions: </h1><br>
+<div class='jumbotron text-center'><h1> Answer Questions: </h1><br>
 <a href="alunoView.php"><button class="btn btn-primary" type='button' value='Back'>Back</button></a></div>
 
 <div class="container">
